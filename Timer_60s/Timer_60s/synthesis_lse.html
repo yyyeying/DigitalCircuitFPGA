@@ -1,0 +1,240 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Wed May 23 16:54:59 2018
+
+
+Command Line:  synthesis -f Timer_60s_Timer_60s_lattice.synproj -gui -msgset C:/FPGACode/Timer_60s/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = Timer_60s.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/FPGACode/Timer_60s (searchpath added)
+-p C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/FPGACode/Timer_60s/Timer_60s (searchpath added)
+-p C:/FPGACode/Timer_60s (searchpath added)
+Verilog design file = C:/FPGACode/Timer_60s/Timer_60s.v
+Verilog design file = C:/FPGACode/Timer_60s/Segment_led.v
+Verilog design file = C:/FPGACode/Timer_60s/Debounce.v
+NGD file = Timer_60s_Timer_60s.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/fpgacode/timer_60s/timer_60s.v. VERI-1482
+Analyzing Verilog file c:/fpgacode/timer_60s/segment_led.v. VERI-1482
+Analyzing Verilog file c:/fpgacode/timer_60s/debounce.v. VERI-1482
+Analyzing Verilog file C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): Timer_60s
+INFO - synthesis: c:/fpgacode/timer_60s/timer_60s.v(24): compiling module Timer_60s. VERI-1018
+INFO - synthesis: c:/fpgacode/timer_60s/debounce.v(18): compiling module Debounce. VERI-1018
+WARNING - synthesis: c:/fpgacode/timer_60s/debounce.v(46): expression size 32 truncated to fit in target size 1. VERI-1209
+INFO - synthesis: c:/fpgacode/timer_60s/segment_led.v(18): compiling module Segment_led. VERI-1018
+WARNING - synthesis: c:/fpgacode/timer_60s/segment_led.v(26): net seg does not have a driver. VDB-1002
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = Timer_60s.
+WARNING - synthesis: c:/fpgacode/timer_60s/segment_led.v(26): ram seg_original_ramnet has no write-port on it. VDB-1038
+
+
+
+GSR instance connected to net rst_n_in_c.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in Timer_60s_drc.log.
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/Program Files/Lattice/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Timer_60s_Timer_60s.ngd.
+
+################### Begin Area Report (Timer_60s)######################
+Number of register bits => 56 of 4635 (1 % )
+CCU2D => 23
+FD1P3AY => 2
+FD1P3IX => 28
+FD1S3AY => 7
+FD1S3IX => 19
+GSR => 1
+IB => 3
+LUT4 => 55
+OB => 32
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_in_c, loads : 56
+Clock Enable Nets
+Number of Clock Enables: 5
+Top 5 highest fanout Clock Enables:
+  Net : clk_in_c_enable_15, loads : 9
+  Net : clk_in_c_enable_29, loads : 5
+  Net : clk_in_c_enable_27, loads : 4
+  Net : Debounce_uut/clk_in_c_enable_17, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : Debounce_uut/n612, loads : 23
+  Net : Debounce_uut/clk_in_c_enable_30, loads : 23
+  Net : Debounce_uut/key_an, loads : 19
+  Net : led_c, loads : 14
+  Net : seg_data_4, loads : 12
+  Net : seg_data_3, loads : 12
+  Net : seg_data_0, loads : 12
+  Net : seg_data_5, loads : 11
+  Net : seg_data_2, loads : 11
+  Net : seg_data_1, loads : 11
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_in_c]                |  200.000 MHz|   77.298 MHz|     8 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 59.516  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.734  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

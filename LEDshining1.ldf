@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="LEDshining1" device="LCMXO2-1200HC-5TG144C" default_implementation="LEDshining1">
+    <Options/>
+    <Implementation title="LEDshining1" dir="LEDshining1" description="LEDshining1" synthesis="lse" default_strategy="Strategy1">
+        <Options/>
+        <Source name="LEDshining.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="LEDshining1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="LEDshining11.sty"/>
+</BaliProject>

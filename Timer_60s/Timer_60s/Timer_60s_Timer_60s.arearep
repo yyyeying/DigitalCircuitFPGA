@@ -1,0 +1,37 @@
+----------------------------------------------------------------------
+Report for cell Timer_60s.TECH
+Register bits:  56 of 4635 (1.208%)
+I/O cells:      35
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        23          100.0
+                            FD1P3AY         2          100.0
+                            FD1P3IX        28          100.0
+                            FD1S3AY         7          100.0
+                            FD1S3IX        19          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                               LUT4        55          100.0
+                                 OB        32          100.0
+SUB MODULES
+                           Debounce         1
+                        Segment_led         1
+                              TOTAL       172
+----------------------------------------------------------------------
+Report for cell Segment_led.v1
+Instance Path : Segment_led_uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        15           27.3
+                              TOTAL        15
+----------------------------------------------------------------------
+Report for cell Debounce.v1
+Instance Path : Debounce_uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10           43.5
+                            FD1P3AY         1           50.0
+                            FD1S3AY         3           42.9
+                            FD1S3IX        19          100.0
+                               LUT4        11           20.0
+                              TOTAL        44

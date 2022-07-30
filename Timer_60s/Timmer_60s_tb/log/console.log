@@ -1,0 +1,111 @@
+designverincludedir -clear
+designverlibrarysim -PL -clear
+designverlibrarysim -L -clear
+designverlibrarysim -PL pmi_work
+designverlibrarysim ovi_machxo2
+designverdefinemacro -clear
+addfile C:/FPGACode/Timer_60s/Timmer_60s_tb/Segment_led.v
+# Adding file C:\FPGACode\Timer_60s\Timmer_60s_tb\Segment_led.v ... Done
+addfile C:/FPGACode/Timer_60s/Timmer_60s_tb/Debounce.v
+# Adding file C:\FPGACode\Timer_60s\Timmer_60s_tb\Debounce.v ... Done
+addfile C:/FPGACode/Timer_60s/Timmer_60s_tb/Timer_60s.v
+# Adding file C:\FPGACode\Timer_60s\Timmer_60s_tb\Timer_60s.v ... Done
+addfile C:/FPGACode/Timer_60s/Timmer_60s_tb/Timer_60s_tb.v
+# Adding file C:\FPGACode\Timer_60s\Timmer_60s_tb\Timer_60s_tb.v ... Done
+vlib C:/FPGACode/Timer_60s/Timmer_60s_tb/work
+# Adding library O.K.
+adel -all
+# Library contents cleared.
+vlog -dbg -work work C:/FPGACode/Timer_60s/Timmer_60s_tb/Segment_led.v
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Unit top modules: Segment_led.
+# $root top modules: Segment_led.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/FPGACode/Timer_60s/Timmer_60s_tb/Debounce.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Debounce.
+# $root top modules: Segment_led Debounce.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/FPGACode/Timer_60s/Timmer_60s_tb/Timer_60s.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module Debounce found in current working library.
+# Info: VCP2113 Module Segment_led found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Timer_60s.
+# $root top modules: Timer_60s.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+vlog -dbg -work work C:/FPGACode/Timer_60s/Timmer_60s_tb/Timer_60s_tb.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module Timer_60s found in current working library.
+# Pass 2. Processing instantiations.
+# Warning: VCP2597 Timmer_60s_tb/Timer_60s_tb.v : (28, 1): Some unconnected ports remain at instance: Timer_60s_tb. Module Timer_60s has unconnected  port(s) : led.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Timer_60s_tb.
+# $root top modules: Timer_60s_tb.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+module Timer_60s_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'Timer_60s' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Debounce' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Segment_led' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+vsim +access +r Timer_60s_tb -PL pmi_work -L ovi_machxo2
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: Module 'Timer_60s' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Debounce' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Warning: Module 'Segment_led' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.1 [s]
+# SLP: Finished : 1.1 [s]
+# SLP: 0 primitives and 14 (100.00%) other processes in SLP
+# SLP: 28 (96.55%) signals in SLP and 1 (3.45%) interface signals
+# ELAB2: Elaboration final pass complete - time: 1.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Lattice Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5542 kB (elbread=1280 elab2=4116 kernel=144 sdf=0)
+# KERNEL: ASDB file was created in location C:\FPGACode\Timer_60s\Timmer_60s_tb\src\wave.asdb
+#  16:49, 2018Äê5ÔÂ23ÈÕ
+#  Simulation has been initialized
+add wave *
+# 5 signal(s) traced.
+run 1000ns
+# Waveform file 'untitled.awc' connected to 'C:/FPGACode/Timer_60s/Timmer_60s_tb/src/wave.asdb'.
+# KERNEL: stopped at time: 1 us
+# Waveform file 'C:/FPGACode/Timer_60s/Timmer_60s_tb/src/untitled.awc' connected to 'C:/FPGACode/Timer_60s/Timmer_60s_tb/src/untitled.asdb'.
+# Adding file C:\FPGACode\Timer_60s\Timmer_60s_tb\src\untitled.asdb ... Done
+# Adding file C:\FPGACode\Timer_60s\Timmer_60s_tb\src\untitled.awc ... Done

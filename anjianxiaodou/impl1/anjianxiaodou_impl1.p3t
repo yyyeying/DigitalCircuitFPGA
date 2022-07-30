@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "anjianxiaodou_impl1.log"
+-o "anjianxiaodou_impl1.csv"
+-pr "anjianxiaodou_impl1.prf"

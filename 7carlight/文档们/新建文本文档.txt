@@ -1,0 +1,58 @@
+
+//第一个always块，描述在时钟驱动下次态迁移到现态。
+
+always @ (posedge clk or negedge rst_n)  //异步复位
+
+if (!rst_n)
+
+current_state<= IDLE;
+
+else
+
+current_state<= next_state; //注意，使用非阻塞赋值
+
+ 
+
+//第二个always块，描述状态的转移关系
+
+always @ (current_state)   //电平触发，将现态作为敏感信号
+
+begin
+
+    case (current_state)
+
+S1: next_state = S2;  //阻塞赋值
+
+       S2: next_state = S3;  //阻塞赋值
+
+       ……
+
+       default: next_state = ‘bx; //对多余状态的处理
+
+    endcase
+
+end
+
+ 
+
+//第三个always块，描述每个状态对应的输出
+
+always @ (current_state)
+
+begin
+
+     ...
+
+    case (current_state)
+
+ S1: out1 = 1'b1; //对输出进行赋值
+
+ S2: out2 = 1'b1;
+
+        ……
+
+ default: ...       // 避免综合出锁存器。
+
+    endcase
+
+end

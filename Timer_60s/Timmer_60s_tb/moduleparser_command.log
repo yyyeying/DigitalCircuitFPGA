@@ -1,0 +1,1 @@
+C:/Program Files/Lattice/diamond/3.10_x64/bin/nt64/moduleparser.exe -PROJ Timmer_60s_tb -pf C:/Program Files/Lattice/diamond/3.10_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg C:/Program Files/Lattice/diamond/3.10_x64/cae_library/vhdl_packages/vdbs -lst C:/FPGACode/Timer_60s/Timmer_60s_tb/source_files.lst

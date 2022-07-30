@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1527065717"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1527065718"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1527065720"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1527065723"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1527065726"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1527065704">
+            <Task name="Map" build_result="2" update_result="0" update_time="1527065704"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1527065705"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1527065706"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1527065707"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1527065714">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1527065714"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1527065715"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1527065717"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1527065700">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1527065700"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1527065700"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1527065684"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/Timer_60s_Timer_60s_map.vdb" last_build_time="1527065704" last_build_size="49912"/>
+        <Report name="IBIS/Timer_60s_Timer_60s.ibs" last_build_time="1527065717" last_build_size="67032"/>
+        <Report name="Timer_60s_Timer_60s.bgn" last_build_time="1527065726" last_build_size="4253"/>
+        <Report name="Timer_60s_Timer_60s.bit" last_build_time="1527065723" last_build_size="17173"/>
+        <Report name="Timer_60s_Timer_60s.ior" last_build_time="1527065717" last_build_size="3888"/>
+        <Report name="Timer_60s_Timer_60s.jed" last_build_time="1527065726" last_build_size="850243"/>
+        <Report name="Timer_60s_Timer_60s.lsedata" last_build_time="1527065699" last_build_size="103947"/>
+        <Report name="Timer_60s_Timer_60s.ncd" last_build_time="1527065714" last_build_size="119437"/>
+        <Report name="Timer_60s_Timer_60s.ngd" last_build_time="1527065700" last_build_size="100738"/>
+        <Report name="Timer_60s_Timer_60s.tw1" last_build_time="1527065705" last_build_size="11370"/>
+        <Report name="Timer_60s_Timer_60s.twr" last_build_time="1527065715" last_build_size="52957"/>
+        <Report name="Timer_60s_Timer_60s_map.ncd" last_build_time="1527065704" last_build_size="88270"/>
+        <Report name="Timer_60s_Timer_60s_mapvho.sdf" last_build_time="1527065707" last_build_size="79046"/>
+        <Report name="Timer_60s_Timer_60s_mapvho.vho" last_build_time="1527065707" last_build_size="622260"/>
+        <Report name="Timer_60s_Timer_60s_mapvo.sdf" last_build_time="1527065706" last_build_size="78816"/>
+        <Report name="Timer_60s_Timer_60s_mapvo.vo" last_build_time="1527065706" last_build_size="86917"/>
+        <Report name="Timer_60s_Timer_60s_vho.sdf" last_build_time="1527065720" last_build_size="91639"/>
+        <Report name="Timer_60s_Timer_60s_vho.vho" last_build_time="1527065720" last_build_size="632491"/>
+        <Report name="Timer_60s_Timer_60s_vo.sdf" last_build_time="1527065718" last_build_size="91204"/>
+        <Report name="Timer_60s_Timer_60s_vo.vo" last_build_time="1527065718" last_build_size="89466"/>
+    </Strategy>
+</BuildStatus>

@@ -1,0 +1,25 @@
+[COMPILESTATUS|.\Segment_led.v]
+FileTimeLow=30588521
+Status=Compiled
+
+[COMPILESTATUS|.\Debounce.v]
+FileTimeLow=30588563
+Status=Compiled
+
+[COMPILESTATUS|.\Timer_60s.v]
+FileTimeLow=30588571
+Status=Compiled
+
+[COMPILESTATUS|.\Timer_60s_tb.v]
+FileTimeLow=30588563
+Status=Warning
+
+[General]
+CurrentVersion=103
+
+[CACHEDOC|Aldec.Project.Generic.7|.\test.adf|]
+Path=
+
+[Gui config]
+RunFor=9000 ns
+

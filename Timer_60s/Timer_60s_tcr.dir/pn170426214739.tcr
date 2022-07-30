@@ -1,0 +1,5 @@
+#Start recording tcl command: 4/26/2017 21:47:02
+#Project Location: C:/Users/22822/Desktop/Homework/Timer_60s; Project name: Timer_60s
+prj_project open "C:/Users/22822/Desktop/Homework/Timer_60s/Timer_60s.ldf"
+prj_run Export -impl Timer_60s
+#Stop recording: 4/26/2017 21:47:39

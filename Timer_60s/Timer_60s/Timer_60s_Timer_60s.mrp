@@ -1,0 +1,336 @@
+
+          Lattice Mapping Report File for Design Module 'Timer_60s'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     Timer_60s_Timer_60s.ngd -o Timer_60s_Timer_60s_map.ncd -pr
+     Timer_60s_Timer_60s.prf -mp Timer_60s_Timer_60s.mrp -lpf
+     C:/FPGACode/Timer_60s/Timer_60s/Timer_60s_Timer_60s.lpf -lpf
+     C:/FPGACode/Timer_60s/Timer_60s.lpf -c 0 -gui -msgset
+     C:/FPGACode/Timer_60s/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  05/23/18  16:55:03
+
+Design Summary
+--------------
+
+   Number of registers:     56 out of  4635 (1%)
+      PFU registers:           56 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        50 out of  2160 (2%)
+      SLICEs as Logic/ROM:     50 out of  2160 (2%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         23 out of  2160 (1%)
+   Number of LUT4s:        100 out of  4320 (2%)
+      Number used as logic LUTs:         54
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       46
+      Number used as shift registers:     0
+   Number of PIO sites used: 35 + 4(JTAG) out of 105 (37%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk_in_c: 33 loads, 33 rising, 0 falling (Driver: PIO clk_in )
+   Number of Clock Enables:  5
+
+                                    Page 1
+
+
+
+
+Design:  Timer_60s                                     Date:  05/23/18  16:55:03
+
+Design Summary (cont)
+---------------------
+     Net clk_in_c_enable_15: 1 loads, 1 LSLICEs
+     Net clk_in_c_enable_29: 1 loads, 1 LSLICEs
+     Net clk_in_c_enable_27: 2 loads, 2 LSLICEs
+     Net Debounce_uut/clk_in_c_enable_17: 1 loads, 1 LSLICEs
+     Net Debounce_uut/pause_state: 13 loads, 13 LSLICEs
+   Number of LSRs:  3
+     Net clk_in_c_enable_15: 3 loads, 3 LSLICEs
+     Net n612: 13 loads, 13 LSLICEs
+     Net Debounce_uut/key_an: 10 loads, 10 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net Debounce_uut/pause_state: 15 loads
+     Net led_c: 14 loads
+     Net n612: 13 loads
+     Net seg_data_0: 12 loads
+     Net seg_data_3: 12 loads
+     Net seg_data_4: 12 loads
+     Net seg_data_1: 11 loads
+     Net seg_data_2: 11 loads
+     Net seg_data_5: 11 loads
+     Net seg_data_6: 10 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| segment_led_1[7]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_1[6]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_1[8]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_1[5]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_1[4]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_1[3]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_1[2]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_1[1]    | OUTPUT    | LVCMOS25  |            |
+
+                                    Page 2
+
+
+
+
+Design:  Timer_60s                                     Date:  05/23/18  16:55:03
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| segment_led_1[0]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[8]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[7]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[6]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[5]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[4]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[3]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[2]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[1]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| segment_led_2[0]    | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[13]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[12]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[11]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[10]             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[9]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[8]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[7]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk_in              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rst_n_in            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| pause               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+                                    Page 3
+
+
+
+
+Design:  Timer_60s                                     Date:  05/23/18  16:55:03
+
+Removed logic
+-------------
+
+Block i996 undriven or does not drive anything - clipped.
+Signal clk_in_c_enable_30 was merged into signal Debounce_uut/pause_state
+Signal n1341 undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal Debounce_uut/cnt_112_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal Debounce_uut/cnt_112_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal Debounce_uut/cnt_112_add_4_19/CO undriven or does not drive anything -
+     clipped.
+Signal cnt_111_add_4_25/S1 undriven or does not drive anything - clipped.
+Signal cnt_111_add_4_25/CO undriven or does not drive anything - clipped.
+Signal cnt_111_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_111_add_4_1/CI undriven or does not drive anything - clipped.
+Block Debounce_uut/i350_1_lut_rep_12 was optimized away.
+Block m0_lut was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_in_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_in_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 47 
+
+     Type and instance name of component: 
+   Register : cnt_111__i2
+   Register : cnt_111__i6
+   Register : cnt_111__i3
+   Register : cnt_111__i4
+   Register : cnt_111__i9
+   Register : cnt_111__i7
+
+                                    Page 4
+
+
+
+
+Design:  Timer_60s                                     Date:  05/23/18  16:55:03
+
+GSR Usage (cont)
+----------------
+   Register : cnt_111__i5
+   Register : cnt_111__i8
+   Register : cnt_111__i11
+   Register : cnt_111__i15
+   Register : cnt_111__i22
+   Register : cnt_111__i1
+   Register : cnt_111__i23
+   Register : cnt_111__i16
+   Register : cnt_111__i17
+   Register : cnt_111__i12
+   Register : cnt_111__i18
+   Register : cnt_111__i19
+   Register : cnt_111__i13
+   Register : cnt_111__i20
+   Register : cnt_111__i14
+   Register : cnt_111__i21
+   Register : cnt_111__i10
+   Register : seg_data__i7
+   Register : seg_data__i5
+   Register : seg_data__i2
+   Register : seg_data__i1
+   Register : cnt_111__i0
+   Register : Debounce_uut/cnt_112__i0
+   Register : Debounce_uut/cnt_112__i18
+   Register : Debounce_uut/cnt_112__i17
+   Register : Debounce_uut/cnt_112__i16
+   Register : Debounce_uut/cnt_112__i15
+   Register : Debounce_uut/cnt_112__i14
+   Register : Debounce_uut/cnt_112__i13
+   Register : Debounce_uut/cnt_112__i12
+   Register : Debounce_uut/cnt_112__i11
+   Register : Debounce_uut/cnt_112__i10
+   Register : Debounce_uut/cnt_112__i9
+   Register : Debounce_uut/cnt_112__i8
+   Register : Debounce_uut/cnt_112__i7
+   Register : Debounce_uut/cnt_112__i6
+   Register : Debounce_uut/cnt_112__i5
+   Register : Debounce_uut/cnt_112__i4
+   Register : Debounce_uut/cnt_112__i3
+   Register : Debounce_uut/cnt_112__i2
+   Register : Debounce_uut/cnt_112__i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 50 MB
+        
+
+
+
+
+
+
+
+
+                                    Page 5
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

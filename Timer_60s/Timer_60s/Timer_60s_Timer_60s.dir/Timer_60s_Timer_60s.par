@@ -1,0 +1,25 @@
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Wed May 23 16:55:07 2018
+
+C:/Program Files/Lattice/diamond/3.10_x64/ispfpga\bin\nt64\par -f
+Timer_60s_Timer_60s.p2t Timer_60s_Timer_60s_map.ncd Timer_60s_Timer_60s.dir
+Timer_60s_Timer_60s.prf -gui -msgset C:/FPGACode/Timer_60s/promote.xml
+
+
+Preference file: Timer_60s_Timer_60s.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -3.847       549901       0.379        0            07           Success
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 7 secs 
+
+par done!

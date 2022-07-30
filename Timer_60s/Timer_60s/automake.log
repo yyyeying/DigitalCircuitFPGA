@@ -1,0 +1,1201 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "Timer_60s_Timer_60s.ngd" -o "Timer_60s_Timer_60s_map.ncd" -pr "Timer_60s_Timer_60s.prf" -mp "Timer_60s_Timer_60s.mrp" -lpf "C:/FPGACode/Timer_60s/Timer_60s/Timer_60s_Timer_60s.lpf" -lpf "C:/FPGACode/Timer_60s/Timer_60s.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: Timer_60s_Timer_60s.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:     56 out of  4635 (1%)
+      PFU registers:           56 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        50 out of  2160 (2%)
+      SLICEs as Logic/ROM:     50 out of  2160 (2%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         23 out of  2160 (1%)
+   Number of LUT4s:        100 out of  4320 (2%)
+      Number used as logic LUTs:         54
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       46
+      Number used as shift registers:     0
+   Number of PIO sites used: 35 + 4(JTAG) out of 105 (37%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net clk_in_c: 33 loads, 33 rising, 0 falling (Driver: PIO clk_in )
+   Number of Clock Enables:  5
+     Net clk_in_c_enable_15: 1 loads, 1 LSLICEs
+     Net clk_in_c_enable_29: 1 loads, 1 LSLICEs
+     Net clk_in_c_enable_27: 2 loads, 2 LSLICEs
+     Net Debounce_uut/clk_in_c_enable_17: 1 loads, 1 LSLICEs
+     Net Debounce_uut/pause_state: 13 loads, 13 LSLICEs
+   Number of LSRs:  3
+     Net clk_in_c_enable_15: 3 loads, 3 LSLICEs
+     Net n612: 13 loads, 13 LSLICEs
+     Net Debounce_uut/key_an: 10 loads, 10 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net Debounce_uut/pause_state: 15 loads
+     Net led_c: 14 loads
+     Net n612: 13 loads
+     Net seg_data_0: 12 loads
+     Net seg_data_3: 12 loads
+     Net seg_data_4: 12 loads
+     Net seg_data_1: 11 loads
+     Net seg_data_2: 11 loads
+     Net seg_data_5: 11 loads
+     Net seg_data_6: 10 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 50 MB
+
+Dumping design to file Timer_60s_Timer_60s_map.ncd.
+
+ncd2vdb "Timer_60s_Timer_60s_map.ncd" ".vdbs/Timer_60s_Timer_60s_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+
+trce -f "Timer_60s_Timer_60s.mt" -o "Timer_60s_Timer_60s.tw1" "Timer_60s_Timer_60s_map.ncd" "Timer_60s_Timer_60s.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file timer_60s_timer_60s_map.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Wed May 23 16:55:05 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Timer_60s_Timer_60s.tw1 -gui -msgset C:/FPGACode/Timer_60s/promote.xml Timer_60s_Timer_60s_map.ncd Timer_60s_Timer_60s.prf 
+Design file:     timer_60s_timer_60s_map.ncd
+Preference file: timer_60s_timer_60s.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 520  Score: 1289540
+Cumulative negative slack: 1289540
+
+Constraints cover 1325 paths, 1 nets, and 334 connections (79.33% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Wed May 23 16:55:05 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Timer_60s_Timer_60s.tw1 -gui -msgset C:/FPGACode/Timer_60s/promote.xml Timer_60s_Timer_60s_map.ncd Timer_60s_Timer_60s.prf 
+Design file:     timer_60s_timer_60s_map.ncd
+Preference file: timer_60s_timer_60s.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1325 paths, 1 nets, and 334 connections (79.33% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 520 (setup), 0 (hold)
+Score: 1289540 (setup), 0 (hold)
+Cumulative negative slack: 1289540 (1289540+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+ldbanno "Timer_60s_Timer_60s_map.ncd" -n Verilog -o "Timer_60s_Timer_60s_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the Timer_60s_Timer_60s_map design file.
+
+
+Loading design for application ldbanno from file Timer_60s_Timer_60s_map.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design Timer_60s_Timer_60s_map.ncd into .ldb format.
+Writing Verilog netlist to file Timer_60s_Timer_60s_mapvo.vo
+Writing SDF timing to file Timer_60s_Timer_60s_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+ldbanno "Timer_60s_Timer_60s_map.ncd" -n VHDL -o "Timer_60s_Timer_60s_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the Timer_60s_Timer_60s_map design file.
+
+
+Loading design for application ldbanno from file Timer_60s_Timer_60s_map.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design Timer_60s_Timer_60s_map.ncd into .ldb format.
+Writing VHDL netlist to file Timer_60s_Timer_60s_mapvho.vho
+Writing SDF timing to file Timer_60s_Timer_60s_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+mpartrce -p "Timer_60s_Timer_60s.p2t" -f "Timer_60s_Timer_60s.p3t" -tf "Timer_60s_Timer_60s.pt" "Timer_60s_Timer_60s_map.ncd" "Timer_60s_Timer_60s.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "Timer_60s_Timer_60s_map.ncd"
+Wed May 23 16:55:07 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/FPGACode/Timer_60s/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF Timer_60s_Timer_60s_map.ncd Timer_60s_Timer_60s.dir/5_1.ncd Timer_60s_Timer_60s.prf
+Preference file: Timer_60s_Timer_60s.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file Timer_60s_Timer_60s_map.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   35+4(JTAG)/280     14% used
+                  35+4(JTAG)/105     37% bonded
+
+   SLICE             50/2160          2% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 177
+Number of Connections: 421
+
+Pin Constraint Summary:
+   35 out of 35 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_in_c (driver: clk_in, clk load #: 33)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_in_c" arg1="Primary" arg2="clk_in" arg3="C1" arg4="Primary"  />
+
+The following 3 signals are selected to use the secondary clock routing resources:
+    n612 (driver: Debounce_uut/SLICE_26, clk load #: 0, sr load #: 13, ce load #: 0)
+    Debounce_uut/pause_state (driver: Debounce_uut/SLICE_26, clk load #: 0, sr load #: 0, ce load #: 13)
+    Debounce_uut/key_an (driver: SLICE_25, clk load #: 0, sr load #: 10, ce load #: 0)
+
+Signal rst_n_in_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 2 secs 
+
+Starting Placer Phase 1.
+.................
+Placer score = 95462.
+Finished Placer Phase 1.  REAL time: 4 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  95439
+Finished Placer Phase 2.  REAL time: 4 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_in_c" from comp "clk_in" on PIO site "C1 (PL4A)", clk load = 33
+  SECONDARY "n612" from F1 on comp "Debounce_uut/SLICE_26" on site "R12C22A", clk load = 0, ce load = 0, sr load = 13
+  SECONDARY "Debounce_uut/pause_state" from Q0 on comp "Debounce_uut/SLICE_26" on site "R12C22A", clk load = 0, ce load = 13, sr load = 0
+  SECONDARY "Debounce_uut/key_an" from F0 on comp "SLICE_25" on site "R12C17A", clk load = 0, ce load = 0, sr load = 10
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 3 out of 8 (37%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   35 + 4(JTAG) out of 280 (13.9%) PIO sites used.
+   35 + 4(JTAG) out of 105 (37.1%) bonded PIO sites used.
+   Number of PIO comps: 35; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 9 / 26 ( 34%)  | 2.5V       | -         |
+| 1        | 5 / 26 ( 19%)  | 2.5V       | -         |
+| 2        | 11 / 28 ( 39%) | 2.5V       | -         |
+| 3        | 2 / 7 ( 28%)   | 2.5V       | -         |
+| 4        | 4 / 8 ( 50%)   | 2.5V       | -         |
+| 5        | 4 / 10 ( 40%)  | 2.5V       | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 3 secs 
+
+Dumping design to file Timer_60s_Timer_60s.dir/5_1.ncd.
+
+0 connections routed; 421 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 6 secs 
+
+Start NBR router at 16:55:13 05/23/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 16:55:13 05/23/18
+
+Start NBR section for initial routing at 16:55:13 05/23/18
+Level 1, iteration 1
+2(0.00%) conflicts; 271(64.37%) untouched conns; 262595 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5.617ns/-262.596ns; real time: 6 secs 
+Level 2, iteration 1
+14(0.01%) conflicts; 225(53.44%) untouched conns; 219061 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5.324ns/-219.061ns; real time: 6 secs 
+Level 3, iteration 1
+16(0.01%) conflicts; 105(24.94%) untouched conns; 153682 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.569ns/-153.682ns; real time: 6 secs 
+Level 4, iteration 1
+10(0.00%) conflicts; 0(0.00%) untouched conn; 147222 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.351ns/-147.222ns; real time: 6 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:55:13 05/23/18
+Level 1, iteration 1
+14(0.01%) conflicts; 0(0.00%) untouched conn; 145158 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.271ns/-145.158ns; real time: 6 secs 
+Level 4, iteration 1
+9(0.00%) conflicts; 0(0.00%) untouched conn; 148271 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.392ns/-148.271ns; real time: 6 secs 
+Level 4, iteration 2
+6(0.00%) conflicts; 0(0.00%) untouched conn; 148894 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.392ns/-148.894ns; real time: 6 secs 
+Level 4, iteration 3
+6(0.00%) conflicts; 0(0.00%) untouched conn; 148916 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.392ns/-148.916ns; real time: 6 secs 
+Level 4, iteration 4
+7(0.00%) conflicts; 0(0.00%) untouched conn; 148916 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.392ns/-148.916ns; real time: 6 secs 
+Level 4, iteration 5
+4(0.00%) conflicts; 0(0.00%) untouched conn; 154548 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.649ns/-154.548ns; real time: 6 secs 
+Level 4, iteration 6
+4(0.00%) conflicts; 0(0.00%) untouched conn; 154548 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.649ns/-154.548ns; real time: 6 secs 
+Level 4, iteration 7
+3(0.00%) conflicts; 0(0.00%) untouched conn; 158849 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.847ns/-158.849ns; real time: 6 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 158849 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.847ns/-158.849ns; real time: 6 secs 
+Level 4, iteration 9
+1(0.00%) conflict; 0(0.00%) untouched conn; 163416 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.847ns/-163.416ns; real time: 6 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 163416 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.847ns/-163.416ns; real time: 6 secs 
+Level 4, iteration 11
+0(0.00%) conflict; 0(0.00%) untouched conn; 165568 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.906ns/-165.568ns; real time: 6 secs 
+
+Start NBR section for performance tuning (iteration 1) at 16:55:13 05/23/18
+Level 4, iteration 1
+4(0.00%) conflicts; 0(0.00%) untouched conn; 157938 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.590ns/-157.938ns; real time: 6 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 164506 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.847ns/-164.506ns; real time: 6 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 164506 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.847ns/-164.506ns; real time: 6 secs 
+
+Start NBR section for re-routing at 16:55:13 05/23/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 164506 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.847ns/-164.506ns; real time: 6 secs 
+
+Start NBR section for post-routing at 16:55:13 05/23/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 86 (20.43%)
+  Estimated worst slack<setup> : -3.847ns
+  Timing score<setup> : 549901
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 6 secs 
+Total REAL time: 7 secs 
+Completely routed.
+End of route.  421 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 549901 
+
+Dumping design to file Timer_60s_Timer_60s.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -3.847
+PAR_SUMMARY::Timing score<setup/<ns>> = 549.901
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 6 secs 
+Total REAL time to completion: 7 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "Timer_60s_Timer_60s.pt" -o "Timer_60s_Timer_60s.twr" "Timer_60s_Timer_60s.ncd" "Timer_60s_Timer_60s.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Wed May 23 16:55:15 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o Timer_60s_Timer_60s.twr -gui -msgset C:/FPGACode/Timer_60s/promote.xml Timer_60s_Timer_60s.ncd Timer_60s_Timer_60s.prf 
+Design file:     timer_60s_timer_60s.ncd
+Preference file: timer_60s_timer_60s.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 392  Score: 549901
+Cumulative negative slack: 549901
+
+Constraints cover 1325 paths, 1 nets, and 334 connections (79.33% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Wed May 23 16:55:15 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o Timer_60s_Timer_60s.twr -gui -msgset C:/FPGACode/Timer_60s/promote.xml Timer_60s_Timer_60s.ncd Timer_60s_Timer_60s.prf 
+Design file:     timer_60s_timer_60s.ncd
+Preference file: timer_60s_timer_60s.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1325 paths, 1 nets, and 334 connections (79.33% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 392 (setup), 0 (hold)
+Score: 549901 (setup), 0 (hold)
+Cumulative negative slack: 549901 (549901+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+iotiming  "Timer_60s_Timer_60s.ncd" "Timer_60s_Timer_60s.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+ibisgen "Timer_60s_Timer_60s.pad" "C:/Program Files/Lattice/diamond/3.10_x64/cae_library/ibis/machxo2.ibs" 
+IBIS Models Generator: Lattice Diamond (64-bit) 3.10.0.111.2
+
+Wed May 23 16:55:17 2018
+
+Comp: clk_in
+ Site: C1
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: led[0]
+ Site: N13
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[10]
+ Site: N2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[11]
+ Site: P4
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[12]
+ Site: N3
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[13]
+ Site: M3
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[1]
+ Site: M12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[2]
+ Site: P12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[3]
+ Site: M11
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[4]
+ Site: P11
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[5]
+ Site: N10
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[6]
+ Site: N9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[7]
+ Site: P9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[8]
+ Site: M2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: led[9]
+ Site: P2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: pause
+ Site: M13
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: rst_n_in
+ Site: L14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: segment_led_1[0]
+ Site: A10
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[1]
+ Site: C11
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[2]
+ Site: F2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[3]
+ Site: E1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[4]
+ Site: E2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[5]
+ Site: A9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[6]
+ Site: B9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[7]
+ Site: F1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_1[8]
+ Site: C9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[0]
+ Site: C12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[1]
+ Site: B14
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[2]
+ Site: J1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[3]
+ Site: H1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[4]
+ Site: H2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[5]
+ Site: B12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[6]
+ Site: A11
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[7]
+ Site: K1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: segment_led_2[8]
+ Site: A12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Created design models.
+
+
+Generating: C:\FPGACode\Timer_60s\Timer_60s\IBIS\Timer_60s_Timer_60s.ibs
+
+
+    <postMsg mid="1191031" type="Info"    dynamic="0" navigation="0"  />
+
+ldbanno "Timer_60s_Timer_60s.ncd" -n Verilog  -o "Timer_60s_Timer_60s_vo.vo"         -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the Timer_60s_Timer_60s design file.
+
+
+Loading design for application ldbanno from file Timer_60s_Timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design Timer_60s_Timer_60s.ncd into .ldb format.
+Loading preferences from timer_60s_timer_60s.prf.
+Writing Verilog netlist to file Timer_60s_Timer_60s_vo.vo
+Writing SDF timing to file Timer_60s_Timer_60s_vo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+ldbanno "Timer_60s_Timer_60s.ncd" -n VHDL -o "Timer_60s_Timer_60s_vho.vho"         -w -neg 
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the Timer_60s_Timer_60s design file.
+
+
+Loading design for application ldbanno from file Timer_60s_Timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design Timer_60s_Timer_60s.ncd into .ldb format.
+Loading preferences from timer_60s_timer_60s.prf.
+Writing VHDL netlist to file Timer_60s_Timer_60s_vho.vho
+Writing SDF timing to file Timer_60s_Timer_60s_vho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+bitgen -f "Timer_60s_Timer_60s.t2b" -w "Timer_60s_Timer_60s.ncd" "Timer_60s_Timer_60s.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Timer_60s_Timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Timer_60s_Timer_60s.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Timer_60s_Timer_60s.bit".
+
+bitgen -f "Timer_60s_Timer_60s.t2b" -w "Timer_60s_Timer_60s.ncd" -jedec "Timer_60s_Timer_60s.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file Timer_60s_Timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from Timer_60s_Timer_60s.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "Timer_60s_Timer_60s.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

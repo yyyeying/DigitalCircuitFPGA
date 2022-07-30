@@ -1,0 +1,14 @@
+[Version]
+Version=10.3
+[Designs]
+Timmer_60s_tb=Timmer_60s_tb.adf
+[Settings]
+Active=Timmer_60s_tb
+[Expand]
+timmer_60s_tb=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

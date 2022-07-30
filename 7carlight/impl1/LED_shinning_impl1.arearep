@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+Report for cell tail_lamp.TECH
+Register bits:  44 of 4635 (0.949%)
+I/O cells:      20
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        12          100.0
+                            FD1P3AX         2          100.0
+                            FD1P3AY        14          100.0
+                            FD1S3AX         5          100.0
+                            FD1S3IX        23          100.0
+                                GSR         1          100.0
+                                 IB         6          100.0
+                               LUT4        40          100.0
+                                 OB        14          100.0
+                              PFUMX         4          100.0
+                              TOTAL       121

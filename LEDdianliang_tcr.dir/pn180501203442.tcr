@@ -1,0 +1,25 @@
+#Start recording tcl command: 5/1/2018 20:03:20
+#Project Location: C:/FPGACode; Project name: LEDdianliang
+C:/FPGACode/LEDqiduanma
+LEDqiduanma003
+#Start recording tcl command: 5/1/2018 20:34:42
+#Project Location: C:/FPGACode/LEDqiduanma; Project name: LEDqiduanma003
+prj_project new -name "LEDdianliang" -impl "impl1" -dev LCMXO2-4000HC-5MG132C -synthesis "lse"
+prj_project save
+prj_src add "C:/FPGACode/LEDdianliang.v"
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+pgr_project save "C:/FPGACode/impl1/impl1.xcf"
+prj_src add -exclude "C:/FPGACode/impl1/impl1.xcf"
+prj_src enable "C:/FPGACode/impl1/impl1.xcf"
+prj_run Export -impl impl1
+pgr_program run
+pgr_project save "C:/FPGACode/impl1/impl1.xcf"
+prj_project save
+prj_project close
+prj_project new -name "LEDqiduanma003" -impl "impl1" -dev LCMXO2-4000HC-5TG144C -synthesis "lse"
+prj_project save
+#Stop recording: 5/1/2018 20:34:42

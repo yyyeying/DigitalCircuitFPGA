@@ -1,0 +1,11 @@
+4
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 3 "./../Debounce.v" 18 Debounce
+~A 1 "./../Debounce.v" 18 Debounce
+~M 3 "./../Segment_led.v" 18 Segment_led
+~A 1 "./../Segment_led.v" 18 Segment_led
+~M 3 "./../Timer_60s.v" 24 Timer_60s
+~A 1 "./../Timer_60s.v" 24 Timer_60s
+~M 3 "./../Timer_60s_tb.v" 20 Timer_60s_tb
+~A 1 "./../Timer_60s_tb.v" 20 Timer_60s_tb

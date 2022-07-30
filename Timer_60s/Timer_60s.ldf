@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Timer_60s" device="LCMXO2-4000HC-4MG132C" default_implementation="Timer_60s">
+    <Options/>
+    <Implementation title="Timer_60s" dir="Timer_60s" description="Timer_60s" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="Timer_60s"/>
+        <Source name="Timer_60s.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Timer_60s"/>
+        </Source>
+        <Source name="Segment_led.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Debounce.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Timer_60s_tb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="test/test.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="Timer_60s.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="Timer_60s/Timer_60s.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="Timmer_60s_tb/Timmer_60s_tb.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="timmertest/timmertest.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Timer_60s1.sty"/>
+</BaliProject>

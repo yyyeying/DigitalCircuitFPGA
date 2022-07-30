@@ -1,0 +1,56 @@
+timestamp=1527066532126
+
+[~A]
+C:/FPGACode/Timer_60s/test/Debounce.v=0*1833*2662
+C:/FPGACode/Timer_60s/test/Segment_led.v=0*379*891
+C:/FPGACode/Timer_60s/test/Timer_60s.v=0*3646*4588
+C:/FPGACode/Timer_60s/test/Timer_60s_tb.v=0*5431*6008
+LastVerilogToplevel=Timer_60s_tb
+ModifyID=4
+Version=74
+
+[$root]
+A/$root=22|||1*7605
+BinI32/$root=3*7366
+SLP=3*7470
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|c73a565f2ade592f8ac1c68f484c9216d60021ec8e93a313734278bddfc70240
+
+[Debounce]
+A/Debounce=22|./../Debounce.v|18|1*2254
+BinI32/Debounce=3*1540
+R=./../Debounce.v|18
+SLP=3*4243
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|114ccf204ea47feb613ccd6989404f84608a23f978d496696ba22857755a1d04189878b3c466e17f83c2b01505687b36
+
+[Segment_led]
+A/Segment_led=22|./../Segment_led.v|18|1*374
+BinI32/Segment_led=3*172
+R=./../Segment_led.v|18
+SLP=3*945
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|a7b4a286aedc6b47c3aafc4a2593feb64f617511829451d4426e215525dedd18398c23175c0a8349a5bf1c18d92f2655
+
+[Timer_60s]
+A/Timer_60s=22|./../Timer_60s.v|24|1*5195
+BinI32/Timer_60s=3*5158
+R=./../Timer_60s.v|24
+SLP=3*6586
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|6745a194d319f853f31150eedb93f475667297bb14a392851e11ec4dc2df13b04a94d612a959d26981c95212e84a407a
+
+[Timer_60s_tb]
+A/Timer_60s_tb=22|./../Timer_60s_tb.v|20|1*7979
+BinI32/Timer_60s_tb=3*7538
+R=./../Timer_60s_tb.v|20
+SLP=3*8358
+Version=10.3.3558.6081  (Windows)|00000004789cd34d494a0700030f015b|54a4e58350d204cee9b5f86ba74d9b0053475b1b03423384efa1ac08ceac35ec1c64eb529f2ea71a5845e042c3f7d774
+
+[~MFT]
+0=4|0work.mgf|6008|0
+1=3|1work.mgf|7979|1138
+3=6|3work.mgf|8358|516
+
+[~U]
+$root=12|0*5075|
+Debounce=12|0*1562||0x10
+Segment_led=12|0*166||0x10
+Timer_60s=12|0*3346||0x10
+Timer_60s_tb=12|0*5273||0x10

@@ -1,0 +1,99 @@
+
+Loading design for application trce from file ledshining1_ledshining1_map.ncd.
+Design name: LED
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-1200HC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c1200.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Tue May 01 20:01:10 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o LEDshining1_LEDshining1.tw1 -gui LEDshining1_LEDshining1_map.ncd LEDshining1_LEDshining1.prf 
+Design file:     ledshining1_ledshining1_map.ncd
+Preference file: ledshining1_ledshining1.prf
+Device,speed:    LCMXO2-1200HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    5.850ns delay key[0] to led[4]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372     key[0].PAD to   key[0].PADDI key[0]
+ROUTE         1   e 1.030   key[0].PADDI to   led[4].PADDO led_c_0_c
+DOPAD_DEL   ---     3.448   led[4].PADDO to     led[4].PAD led[4]
+                  --------
+                    5.850   (82.4% logic, 17.6% route), 2 logic levels.
+
+Report:    5.850ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    1.030ns maximum delay on n5_c
+
+           Delays             Connection(s)
+         e 1.030ns      sw[0].PADDI to led[0].PADDO    
+
+Report:    1.030ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     5.850 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     1.030 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 8 paths, 8 nets, and 8 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+

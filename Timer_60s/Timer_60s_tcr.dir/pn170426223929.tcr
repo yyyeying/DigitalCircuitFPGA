@@ -1,0 +1,22 @@
+#Start recording tcl command: 4/26/2017 21:50:39
+#Project Location: F:/project/Timer_60s; Project name: Timer_60s
+F:/project/JK_counter
+JK_counter
+#Start recording tcl command: 4/26/2017 22:39:29
+#Project Location: F:/project/JK_counter; Project name: JK_counter
+prj_project open "F:/project/Timer_60s/Timer_60s.ldf"
+prj_run Export -impl Timer_60s
+prj_src remove "F:/project/Timer_60s/j/j.spf" "F:/project/Timer_60s/rn/rn.spf" "F:/project/Timer_60s/s/s.spf" "F:/project/Timer_60s/sa/sa.spf" "F:/project/Timer_60s/ss/ss.spf" "F:/project/Timer_60s/tb/tb.spf" "F:/project/Timer_60s/xx/xx.spf"
+prj_run Export -impl Timer_60s
+pgr_project open "F:/project/Timer_60s/Timer_60s/Timer_60s.xcf"
+pgr_program run
+prj_run Export -impl Timer_60s
+pgr_program run
+prj_run Export -impl Timer_60s
+pgr_program run
+pgr_project save "F:/project/Timer_60s/Timer_60s/Timer_60s.xcf"
+prj_project save
+prj_project close
+prj_project open "F:/project/JK_counter/JK_counter.ldf"
+pgr_project close
+#Stop recording: 4/26/2017 22:39:29

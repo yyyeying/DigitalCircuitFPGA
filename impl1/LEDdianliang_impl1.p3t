@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "LEDdianliang_impl1.log"
+-o "LEDdianliang_impl1.csv"
+-pr "LEDdianliang_impl1.prf"

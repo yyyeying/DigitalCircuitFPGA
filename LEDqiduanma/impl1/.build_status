@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1525179177"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1525179178"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1525179179"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1525179183"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1525179186"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1525179168">
+            <Task name="Map" build_result="2" update_result="0" update_time="1525179168"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1525179169"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1525179170"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1525179171"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1525179174">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1525179174"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1525179175"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1525179177"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1525178683">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1525178683"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1525178710"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1525178661"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/LEDqiduanma003_impl1_map.vdb" last_build_time="1525179168" last_build_size="31226"/>
+        <Report name="IBIS/LEDqiduanma003_impl1.ibs" last_build_time="1525179177" last_build_size="66520"/>
+        <Report name="LEDqiduanma003_impl1.bgn" last_build_time="1525179186" last_build_size="4212"/>
+        <Report name="LEDqiduanma003_impl1.bit" last_build_time="1525179183" last_build_size="16394"/>
+        <Report name="LEDqiduanma003_impl1.ior" last_build_time="1525179177" last_build_size="1787"/>
+        <Report name="LEDqiduanma003_impl1.jed" last_build_time="1525179186" last_build_size="849945"/>
+        <Report name="LEDqiduanma003_impl1.lsedata" last_build_time="1525178683" last_build_size="5903"/>
+        <Report name="LEDqiduanma003_impl1.ncd" last_build_time="1525179174" last_build_size="32421"/>
+        <Report name="LEDqiduanma003_impl1.ngd" last_build_time="1525178683" last_build_size="22700"/>
+        <Report name="LEDqiduanma003_impl1.tw1" last_build_time="1525179169" last_build_size="4061"/>
+        <Report name="LEDqiduanma003_impl1.twr" last_build_time="1525179175" last_build_size="13036"/>
+        <Report name="LEDqiduanma003_impl1_map.ncd" last_build_time="1525179168" last_build_size="24871"/>
+        <Report name="LEDqiduanma003_impl1_mapvho.sdf" last_build_time="1525179171" last_build_size="15246"/>
+        <Report name="LEDqiduanma003_impl1_mapvho.vho" last_build_time="1525179171" last_build_size="115077"/>
+        <Report name="LEDqiduanma003_impl1_mapvo.sdf" last_build_time="1525179170" last_build_size="15439"/>
+        <Report name="LEDqiduanma003_impl1_mapvo.vo" last_build_time="1525179170" last_build_size="17445"/>
+        <Report name="LEDqiduanma003_impl1_vho.sdf" last_build_time="1525179179" last_build_size="16578"/>
+        <Report name="LEDqiduanma003_impl1_vho.vho" last_build_time="1525179179" last_build_size="118998"/>
+        <Report name="LEDqiduanma003_impl1_vo.sdf" last_build_time="1525179178" last_build_size="16771"/>
+        <Report name="LEDqiduanma003_impl1_vo.vo" last_build_time="1525179178" last_build_size="18436"/>
+    </Strategy>
+</BuildStatus>

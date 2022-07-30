@@ -1,0 +1,197 @@
+
+Loading design for application trce from file ledshining1_ledshining1.ncd.
+Design name: LED
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-1200HC
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'xo2c1200.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Tue May 01 20:01:33 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o LEDshining1_LEDshining1.twr -gui LEDshining1_LEDshining1.ncd LEDshining1_LEDshining1.prf 
+Design file:     ledshining1_ledshining1.ncd
+Preference file: ledshining1_ledshining1.prf
+Device,speed:    LCMXO2-1200HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    6.448ns delay key[3] to led[7]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         60.PAD to       60.PADDI key[3]
+ROUTE         1     1.628       60.PADDI to       57.PADDO led_c_3_c
+DOPAD_DEL   ---     3.448       57.PADDO to         57.PAD led[7]
+                  --------
+                    6.448   (74.8% logic, 25.2% route), 2 logic levels.
+
+Report:    6.442ns delay key[0] to led[4]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        141.PAD to      141.PADDI key[0]
+ROUTE         1     1.622      141.PADDI to      142.PADDO led_c_0_c
+DOPAD_DEL   ---     3.448      142.PADDO to        142.PAD led[4]
+                  --------
+                    6.442   (74.8% logic, 25.2% route), 2 logic levels.
+
+Report:    6.442ns delay key[1] to led[5]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        127.PAD to      127.PADDI key[1]
+ROUTE         1     1.622      127.PADDI to      125.PADDO led_c_1_c
+DOPAD_DEL   ---     3.448      125.PADDO to        125.PAD led[5]
+                  --------
+                    6.442   (74.8% logic, 25.2% route), 2 logic levels.
+
+Report:    6.442ns delay key[2] to led[6]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        122.PAD to      122.PADDI key[2]
+ROUTE         1     1.622      122.PADDI to      120.PADDO led_c_2_c
+DOPAD_DEL   ---     3.448      120.PADDO to        120.PAD led[6]
+                  --------
+                    6.442   (74.8% logic, 25.2% route), 2 logic levels.
+
+Report:    6.442ns delay sw[2] to led[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372        117.PAD to      117.PADDI sw[2]
+ROUTE         1     1.622      117.PADDI to      115.PADDO n3_c
+DOPAD_DEL   ---     3.448      115.PADDO to        115.PAD led[2]
+                  --------
+                    6.442   (74.8% logic, 25.2% route), 2 logic levels.
+
+Report:    6.093ns delay sw[1] to led[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         69.PAD to       69.PADDI sw[1]
+ROUTE         1     1.924       69.PADDI to       74.PADDO n4_c
+DOPAD_DEL   ---     2.797       74.PADDO to         74.PAD led[1]
+                  --------
+                    6.093   (68.4% logic, 31.6% route), 2 logic levels.
+
+Report:    6.079ns delay sw[3] to led[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         59.PAD to       59.PADDI sw[3]
+ROUTE         1     1.259       59.PADDI to       58.PADDO n2_c
+DOPAD_DEL   ---     3.448       58.PADDO to         58.PAD led[3]
+                  --------
+                    6.079   (79.3% logic, 20.7% route), 2 logic levels.
+
+Report:    5.743ns delay sw[0] to led[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.372         70.PAD to       70.PADDI sw[0]
+ROUTE         1     1.574       70.PADDI to       75.PADDO n5_c
+DOPAD_DEL   ---     2.797       75.PADDO to         75.PAD led[0]
+                  --------
+                    5.743   (72.6% logic, 27.4% route), 2 logic levels.
+
+Report:    6.448ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    1.924ns maximum delay on n4_c
+
+           Delays             Connection(s)
+           1.924ns         69.PADDI to 74.PADDO        
+
+Report:    1.628ns maximum delay on led_c_3_c
+
+           Delays             Connection(s)
+           1.628ns         60.PADDI to 57.PADDO        
+
+Report:    1.622ns maximum delay on led_c_1_c
+
+           Delays             Connection(s)
+           1.622ns        127.PADDI to 125.PADDO       
+
+Report:    1.622ns maximum delay on led_c_2_c
+
+           Delays             Connection(s)
+           1.622ns        122.PADDI to 120.PADDO       
+
+Report:    1.622ns maximum delay on n3_c
+
+           Delays             Connection(s)
+           1.622ns        117.PADDI to 115.PADDO       
+
+Report:    1.622ns maximum delay on led_c_0_c
+
+           Delays             Connection(s)
+           1.622ns        141.PADDI to 142.PADDO       
+
+Report:    1.574ns maximum delay on n5_c
+
+           Delays             Connection(s)
+           1.574ns         70.PADDI to 75.PADDO        
+
+Report:    1.259ns maximum delay on n2_c
+
+           Delays             Connection(s)
+           1.259ns         59.PADDI to 58.PADDO        
+
+Report:    1.924ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|     6.448 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     1.924 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 8 paths, 8 nets, and 8 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,6 @@
+[Files List]
+C:\Program Files\Lattice\diamond\3.10_x64\active-hdl\vlib\std/src/standard.vhd=S
+C:\FPGACode\Timer_60s\timmertest/Segment_led.v=S
+C:\FPGACode\Timer_60s\timmertest/Debounce.v=S
+C:\FPGACode\Timer_60s\timmertest/Timer_60s.v=S
+C:\FPGACode\Timer_60s\timmertest/Timer_60s_tb.v=S

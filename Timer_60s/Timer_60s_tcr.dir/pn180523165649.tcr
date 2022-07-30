@@ -1,0 +1,35 @@
+#Start recording tcl command: 5/23/2018 16:44:05
+#Project Location: C:/FPGACode/Timer_60s; Project name: Timer_60s
+prj_project open "C:/FPGACode/Timer_60s/Timer_60s.ldf"
+prj_run Export -impl Timer_60s
+prj_run PAR -impl Timer_60s -task PARTrace
+prj_run PAR -impl Timer_60s
+prj_run Map -impl Timer_60s
+prj_src syn_sim -src "C:/FPGACode/Timer_60s/Timer_60s_tb.v" SynthesisAndSimulate
+prj_src add "C:/FPGACode/Timer_60s/Timmer_60s_tb/Timmer_60s_tb.spf"
+pgr_project open "C:/FPGACode/Timer_60s/Timer_60s/Timer_60s.xcf"
+pgr_project close
+pgr_project open "C:/FPGACode/Timer_60s/Timer_60s/Timer_60s.xcf"
+prj_run Synthesis -impl Timer_60s
+prj_run Synthesis -impl Timer_60s -task Lattice_Synthesis
+pgr_project close
+prj_run Synthesis -impl Timer_60s -task Lattice_Synthesis
+prj_run Synthesis -impl Timer_60s -task Lattice_Synthesis
+prj_run Synthesis -impl Timer_60s -task Lattice_Synthesis
+prj_src syn_sim -src "C:/FPGACode/Timer_60s/Timer_60s_tb.v" SimulateOnly
+prj_run Synthesis -impl Timer_60s
+prj_run Export -impl Timer_60s
+prj_run Export -impl Timer_60s
+pgr_project open "C:/FPGACode/Timer_60s/Timer_60s/Timer_60s.xcf"
+prj_run Export -impl Timer_60s -task Jedecgen
+pgr_project close
+prj_run Export -impl Timer_60s -task Jedecgen
+prj_run Export -impl Timer_60s -task Jedecgen
+prj_run Export -impl Timer_60s
+prj_run Export -impl Timer_60s
+prj_run Export -impl Timer_60s
+prj_run Export -impl Timer_60s
+prj_run Export -impl Timer_60s
+prj_run Export -impl Timer_60s
+prj_run Export -impl Timer_60s
+#Stop recording: 5/23/2018 16:56:49

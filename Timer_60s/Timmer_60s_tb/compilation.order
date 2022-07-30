@@ -1,0 +1,4 @@
+.\Segment_led.v
+.\Debounce.v
+.\Timer_60s.v
+.\Timer_60s_tb.v

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Timer_60s_Timer_60s.log"
+-o "Timer_60s_Timer_60s.csv"
+-pr "Timer_60s_Timer_60s.prf"

@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "timmer_impl1.log"
+-o "timmer_impl1.csv"
+-pr "timmer_impl1.prf"

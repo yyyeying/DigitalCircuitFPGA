@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1525186243"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1525186244"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1525186245"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1525186249"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1525186252"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1525186234">
+            <Task name="Map" build_result="2" update_result="0" update_time="1525186234"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1525186235"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1525186236"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1525186237"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1525186241">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1525186241"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1525186241"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1525186243"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1525185804">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1525185804"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1525185825"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1525185686"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/anjianxiaodou_impl1_map.vdb" last_build_time="1525186234" last_build_size="31323"/>
+        <Report name="IBIS/anjianxiaodou_impl1.ibs" last_build_time="1525186243" last_build_size="65265"/>
+        <Report name="anjianxiaodou_impl1.bgn" last_build_time="1525186252" last_build_size="4209"/>
+        <Report name="anjianxiaodou_impl1.bit" last_build_time="1525186248" last_build_size="16315"/>
+        <Report name="anjianxiaodou_impl1.ior" last_build_time="1525186243" last_build_size="1879"/>
+        <Report name="anjianxiaodou_impl1.jed" last_build_time="1525186252" last_build_size="849104"/>
+        <Report name="anjianxiaodou_impl1.lsedata" last_build_time="1525185803" last_build_size="26554"/>
+        <Report name="anjianxiaodou_impl1.ncd" last_build_time="1525186241" last_build_size="30720"/>
+        <Report name="anjianxiaodou_impl1.ngd" last_build_time="1525185804" last_build_size="29726"/>
+        <Report name="anjianxiaodou_impl1.tw1" last_build_time="1525186235" last_build_size="10738"/>
+        <Report name="anjianxiaodou_impl1.twr" last_build_time="1525186241" last_build_size="45534"/>
+        <Report name="anjianxiaodou_impl1_map.ncd" last_build_time="1525186234" last_build_size="22812"/>
+        <Report name="anjianxiaodou_impl1_mapvho.sdf" last_build_time="1525186237" last_build_size="21605"/>
+        <Report name="anjianxiaodou_impl1_mapvho.vho" last_build_time="1525186237" last_build_size="183324"/>
+        <Report name="anjianxiaodou_impl1_mapvo.sdf" last_build_time="1525186236" last_build_size="21601"/>
+        <Report name="anjianxiaodou_impl1_mapvo.vo" last_build_time="1525186236" last_build_size="25403"/>
+        <Report name="anjianxiaodou_impl1_vho.sdf" last_build_time="1525186245" last_build_size="24312"/>
+        <Report name="anjianxiaodou_impl1_vho.vho" last_build_time="1525186245" last_build_size="184979"/>
+        <Report name="anjianxiaodou_impl1_vo.sdf" last_build_time="1525186244" last_build_size="24317"/>
+        <Report name="anjianxiaodou_impl1_vo.vo" last_build_time="1525186244" last_build_size="25822"/>
+    </Strategy>
+</BuildStatus>

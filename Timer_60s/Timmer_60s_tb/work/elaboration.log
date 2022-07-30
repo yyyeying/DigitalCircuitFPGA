@@ -1,0 +1,26 @@
+Active-HDL 10.3.3558.6081  2018-05-23 16:49:27
+
+Elaboration top modules:
+Verilog Module                Timer_60s_tb
+
+
+-------------------------------------------------------------------------------------------
+Verilog Module          | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------
+Timer_60s_tb            | work    |      | 10.3.3558.6081  (Windows) | -dbg
+Timer_60s               | work    |      | 10.3.3558.6081  (Windows) | -dbg
+Debounce                | work    |      | 10.3.3558.6081  (Windows) | -dbg
+Segment_led             | work    |      | 10.3.3558.6081  (Windows) | -dbg
+-------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+Library                 | Comment
+-------------------------------------------------------------------------------------------
+work                    | None
+-------------------------------------------------------------------------------------------
+
+
+Simulation Options: vsim +access +r Timer_60s_tb -PL pmi_work -L ovi_machxo2
+
+
+The performance of simulation is reduced. Version Lattice Edition

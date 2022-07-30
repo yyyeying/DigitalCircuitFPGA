@@ -1,0 +1,79 @@
+Loading design for application iotiming from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file timer_60s_timer_60s.ncd.
+Design name: Timer_60s
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: Timer_60s
+// Package: CSBGA132
+// ncd File: timer_60s_timer_60s.ncd
+// Version: Diamond (64-bit) 3.10.0.111.2
+// Written on Wed May 23 16:55:17 2018
+// M: Minimum Performance Grade
+// iotiming Timer_60s_Timer_60s.ncd Timer_60s_Timer_60s.prf -gui -msgset C:/FPGACode/Timer_60s/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock  Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+pause clk_in R     4.061      4       0.464     6
+
+
+// Clock to Output Delay
+
+Port             Clock  Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+led[0]           clk_in R    12.303         4        3.708          M
+led[10]          clk_in R    11.967         4        3.639          M
+led[11]          clk_in R    12.388         4        3.742          M
+led[12]          clk_in R    12.388         4        3.742          M
+led[13]          clk_in R    11.527         4        3.529          M
+led[1]           clk_in R    11.876         4        3.603          M
+led[2]           clk_in R    10.854         4        3.338          M
+led[3]           clk_in R    10.854         4        3.338          M
+led[4]           clk_in R    10.420         4        3.230          M
+led[5]           clk_in R     9.980         4        3.120          M
+led[6]           clk_in R     9.980         4        3.120          M
+led[7]           clk_in R     9.980         4        3.120          M
+led[8]           clk_in R    12.810         4        3.843          M
+led[9]           clk_in R    11.967         4        3.639          M
+segment_led_1[0] clk_in R    13.165         4        3.547          M
+segment_led_1[1] clk_in R    12.677         4        3.716          M
+segment_led_1[2] clk_in R    13.569         4        3.941          M
+segment_led_1[3] clk_in R    14.505         4        4.179          M
+segment_led_1[4] clk_in R    13.641         4        3.976          M
+segment_led_1[5] clk_in R    13.469         4        3.630          M
+segment_led_1[6] clk_in R    12.360         4        3.596          M
+segment_led_2[0] clk_in R    12.440         4        3.611          M
+segment_led_2[1] clk_in R    13.953         4        3.812          M
+segment_led_2[2] clk_in R    13.059         4        3.659          M
+segment_led_2[3] clk_in R    12.235         4        3.558          M
+segment_led_2[4] clk_in R    13.898         4        3.810          M
+segment_led_2[5] clk_in R    13.071         4        3.662          M
+segment_led_2[6] clk_in R    13.549         4        3.811          M
+WARNING: you must also run trce with hold speed: 6

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1525922918"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1525922919"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1525922920"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1525922923"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1525922927"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1525922906">
+            <Task name="Map" build_result="2" update_result="0" update_time="1525922906"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1525922906"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1525922908"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1525922909"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1525922914">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1525922914"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1525922915"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1525922917"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1525922676">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1525922676"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1525922676"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1525922657"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/timmer_impl1_map.vdb" last_build_time="1525922906" last_build_size="42137"/>
+        <Report name="IBIS/timmer_impl1.ibs" last_build_time="1525922918" last_build_size="66227"/>
+        <Report name="timmer_impl1.bgn" last_build_time="1525922927" last_build_size="4179"/>
+        <Report name="timmer_impl1.bit" last_build_time="1525922923" last_build_size="16969"/>
+        <Report name="timmer_impl1.ior" last_build_time="1525922917" last_build_size="2337"/>
+        <Report name="timmer_impl1.jed" last_build_time="1525922927" last_build_size="849725"/>
+        <Report name="timmer_impl1.lsedata" last_build_time="1525922675" last_build_size="86035"/>
+        <Report name="timmer_impl1.ncd" last_build_time="1525922914" last_build_size="96112"/>
+        <Report name="timmer_impl1.ngd" last_build_time="1525922676" last_build_size="79091"/>
+        <Report name="timmer_impl1.tw1" last_build_time="1525922906" last_build_size="18010"/>
+        <Report name="timmer_impl1.twr" last_build_time="1525922915" last_build_size="93466"/>
+        <Report name="timmer_impl1_map.ncd" last_build_time="1525922905" last_build_size="69667"/>
+        <Report name="timmer_impl1_mapvho.sdf" last_build_time="1525922909" last_build_size="60845"/>
+        <Report name="timmer_impl1_mapvho.vho" last_build_time="1525922909" last_build_size="482645"/>
+        <Report name="timmer_impl1_mapvo.sdf" last_build_time="1525922907" last_build_size="60225"/>
+        <Report name="timmer_impl1_mapvo.vo" last_build_time="1525922907" last_build_size="67669"/>
+        <Report name="timmer_impl1_vho.sdf" last_build_time="1525922920" last_build_size="67864"/>
+        <Report name="timmer_impl1_vho.vho" last_build_time="1525922920" last_build_size="485996"/>
+        <Report name="timmer_impl1_vo.sdf" last_build_time="1525922919" last_build_size="67208"/>
+        <Report name="timmer_impl1_vo.vo" last_build_time="1525922919" last_build_size="68512"/>
+    </Strategy>
+</BuildStatus>

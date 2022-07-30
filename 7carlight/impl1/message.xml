@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>tail_lamp</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(1): </Dynamic>
+            <Dynamic>tail_lamp</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(94): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>94</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(95): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>95</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(96): </Dynamic>
+            <Dynamic>_stop</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>96</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(100): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>100</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(100): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>100</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(100): </Dynamic>
+            <Dynamic>_stop</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>100</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(101): </Dynamic>
+            <Dynamic>tail_off</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>101</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(101): </Dynamic>
+            <Dynamic>tail_off</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>101</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(101): </Dynamic>
+            <Dynamic>_go</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>101</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(102): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>102</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(102): </Dynamic>
+            <Dynamic>tail_off</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>102</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(102): </Dynamic>
+            <Dynamic>_left</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>102</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(103): </Dynamic>
+            <Dynamic>tail_off</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>103</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(103): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>103</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(103): </Dynamic>
+            <Dynamic>_rignt</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>103</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(104): </Dynamic>
+            <Dynamic>tail_on</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>104</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(104): </Dynamic>
+            <Dynamic>tail_on</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>104</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(104): </Dynamic>
+            <Dynamic>_back</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>104</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(105): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>105</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(105): </Dynamic>
+            <Dynamic>tail_shin</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>105</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/ktami/desktop/step/7carlight/aa.v(105): </Dynamic>
+            <Dynamic>_stop</Dynamic>
+            <Navigation>c:/users/ktami/desktop/step/7carlight/aa.v</Navigation>
+            <Navigation>105</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sys_clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>sys_clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

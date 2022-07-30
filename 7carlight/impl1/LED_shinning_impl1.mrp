@@ -1,0 +1,270 @@
+
+          Lattice Mapping Report File for Design Module 'tail_lamp'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     LED_shinning_impl1.ngd -o LED_shinning_impl1_map.ncd -pr
+     LED_shinning_impl1.prf -mp LED_shinning_impl1.mrp -lpf
+     C:/Users/ktami/Desktop/step/7carlight/impl1/LED_shinning_impl1.lpf -lpf
+     C:/Users/ktami/Desktop/step/7carlight/LED_shinning.lpf -c 0 -gui -msgset
+     C:/Users/ktami/Desktop/step/7carlight/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  05/16/18  04:37:34
+
+Design Summary
+--------------
+
+   Number of registers:     44 out of  4635 (1%)
+      PFU registers:           44 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        33 out of  2160 (2%)
+      SLICEs as Logic/ROM:     33 out of  2160 (2%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         12 out of  2160 (1%)
+   Number of LUT4s:         65 out of  4320 (2%)
+      Number used as logic LUTs:         41
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       24
+      Number used as shift registers:     0
+   Number of PIO sites used: 20 + 4(JTAG) out of 105 (23%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net sys_clk_c: 23 loads, 23 rising, 0 falling (Driver: PIO sys_clk )
+   Number of Clock Enables:  1
+
+                                    Page 1
+
+
+
+
+Design:  tail_lamp                                     Date:  05/16/18  04:37:34
+
+Design Summary (cont)
+---------------------
+     Net sys_clk_c_enable_16: 8 loads, 8 LSLICEs
+   Number of LSRs:  1
+     Net cnt_23__N_83: 12 loads, 12 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net current_state_2: 17 loads
+     Net current_state_0: 13 loads
+     Net cnt_23__N_83: 12 loads
+     Net sys_rst_n_c: 12 loads
+     Net n4: 9 loads
+     Net sys_clk_c_enable_16: 9 loads
+     Net current_state_1: 5 loads
+     Net n22: 5 loads
+     Net tail_shin_2: 5 loads
+     Net n493: 4 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led_left[2]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_left[1]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_left[0]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_right[2]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_right[1]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_right[0]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[7]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[6]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[5]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[4]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[3]          | OUTPUT    | LVCMOS33  |            |
+
+                                    Page 2
+
+
+
+
+Design:  tail_lamp                                     Date:  05/16/18  04:37:34
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| led_out[2]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_out[0]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sys_clk             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sys_rst_n           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| state_in[3]         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| state_in[2]         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| state_in[1]         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| state_in[0]         | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal GND_net undriven or does not drive anything - clipped.
+Signal cnt_111_112_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_111_112_add_4_1/CI undriven or does not drive anything - clipped.
+Signal cnt_111_112_add_4_23/CO undriven or does not drive anything - clipped.
+Block i1 was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'sys_rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'sys_rst_n_c' via the GSR
+     component.
+
+                                    Page 3
+
+
+
+
+Design:  tail_lamp                                     Date:  05/16/18  04:37:34
+
+GSR Usage (cont)
+----------------
+
+     Type and number of components of the type: 
+   Register = 23 
+
+     Type and instance name of component: 
+   Register : cnt_111_112__i20
+   Register : cnt_111_112__i19
+   Register : cnt_111_112__i18
+   Register : cnt_111_112__i17
+   Register : cnt_111_112__i16
+   Register : cnt_111_112__i15
+   Register : cnt_111_112__i14
+   Register : cnt_111_112__i13
+   Register : cnt_111_112__i12
+   Register : cnt_111_112__i11
+   Register : cnt_111_112__i10
+   Register : cnt_111_112__i1
+   Register : cnt_111_112__i9
+   Register : cnt_111_112__i8
+   Register : cnt_111_112__i7
+   Register : cnt_111_112__i6
+   Register : cnt_111_112__i5
+   Register : cnt_111_112__i4
+   Register : cnt_111_112__i3
+   Register : cnt_111_112__i2
+   Register : cnt_111_112__i21
+   Register : cnt_111_112__i22
+   Register : cnt_111_112__i23
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 49 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 4
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

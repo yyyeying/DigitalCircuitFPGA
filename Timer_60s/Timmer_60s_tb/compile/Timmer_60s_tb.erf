@@ -1,0 +1,24 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE_SP VCP2113 "Module Timer_60s found in current working library."
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+WARNING VCP2597 "Some unconnected ports remain at instance: Timer_60s_tb. Module Timer_60s has unconnected  port(s) : led." "C:/FPGACode/Timer_60s/Timmer_60s_tb/Timer_60s_tb.v" 28  1
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+UPDATEPROGRESS 82
+UPDATEPROGRESS 85
+UPDATEPROGRESS 87
+UPDATEPROGRESS 90
+UPDATEPROGRESS 92
+UPDATEPROGRESS 95
+MESSAGE "Unit top modules: Timer_60s_tb."
+MESSAGE "$root top modules: Timer_60s_tb."
+UPDATEPROGRESS 100
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 1 Warnings  Analysis time: 0[s]."
+MESSAGE "done"

@@ -1,0 +1,24 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue May 01 20:01:51 2018 *
+NOTE DESIGN NAME: LED *
+NOTE DEVICE NAME: LCMXO2-1200HC-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS led[7] : 57 : out *
+NOTE PINS led[6] : 120 : out *
+NOTE PINS led[5] : 125 : out *
+NOTE PINS led[4] : 142 : out *
+NOTE PINS led[3] : 58 : out *
+NOTE PINS led[2] : 115 : out *
+NOTE PINS led[1] : 74 : out *
+NOTE PINS led[0] : 75 : out *
+NOTE PINS key[3] : 60 : in *
+NOTE PINS key[2] : 122 : in *
+NOTE PINS key[1] : 127 : in *
+NOTE PINS key[0] : 141 : in *
+NOTE PINS sw[3] : 59 : in *
+NOTE PINS sw[2] : 117 : in *
+NOTE PINS sw[1] : 69 : in *
+NOTE PINS sw[0] : 70 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

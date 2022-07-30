@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpgacode/timer_60s/timer_60s.v(24): </Dynamic>
+            <Dynamic>Timer_60s</Dynamic>
+            <Navigation>c:/fpgacode/timer_60s/timer_60s.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpgacode/timer_60s/debounce.v(18): </Dynamic>
+            <Dynamic>Debounce</Dynamic>
+            <Navigation>c:/fpgacode/timer_60s/debounce.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpgacode/timer_60s/debounce.v(46): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/fpgacode/timer_60s/debounce.v</Navigation>
+            <Navigation>46</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/fpgacode/timer_60s/segment_led.v(18): </Dynamic>
+            <Dynamic>Segment_led</Dynamic>
+            <Navigation>c:/fpgacode/timer_60s/segment_led.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpgacode/timer_60s/segment_led.v(26): </Dynamic>
+            <Dynamic>seg</Dynamic>
+            <Navigation>c:/fpgacode/timer_60s/segment_led.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35931038</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/fpgacode/timer_60s/segment_led.v(26): </Dynamic>
+            <Dynamic>seg_original_ramnet</Dynamic>
+            <Navigation>c:/fpgacode/timer_60s/segment_led.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_in_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk_in</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

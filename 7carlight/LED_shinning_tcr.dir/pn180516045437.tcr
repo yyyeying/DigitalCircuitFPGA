@@ -1,0 +1,13 @@
+#Start recording tcl command: 5/16/2018 04:00:26
+#Project Location: C:/Users/ktami/Desktop/step/7carlight; Project name: LED_shinning
+prj_project open "C:/Users/ktami/Desktop/step/7carlight/LED_shinning.ldf"
+prj_src add "C:/Users/ktami/Desktop/step/7carlight/aa.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 5/16/2018 04:54:37

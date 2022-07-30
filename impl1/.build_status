@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1525176724"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1525176725"/>
+            <Task name="TimingSimFileVHD" build_result="2" update_result="0" update_time="1525176726"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1525176729"/>
+            <Task name="Jedecgen" build_result="2" update_result="0" update_time="1525176732"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1525176717">
+            <Task name="Map" build_result="2" update_result="0" update_time="1525176717"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1525176717"/>
+            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1525176718"/>
+            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1525176719"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1525176721">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1525176721"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1525176722"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1525176723"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1525176282">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1525176282"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1525176282"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1525176219"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/LEDdianliang_impl1_map.vdb" last_build_time="1525176717" last_build_size="27361"/>
+        <Report name="IBIS/LEDdianliang_impl1.ibs" last_build_time="1525176724" last_build_size="65948"/>
+        <Report name="LEDdianliang_impl1.bgn" last_build_time="1525176732" last_build_size="4222"/>
+        <Report name="LEDdianliang_impl1.bit" last_build_time="1525176729" last_build_size="16094"/>
+        <Report name="LEDdianliang_impl1.ior" last_build_time="1525176723" last_build_size="1472"/>
+        <Report name="LEDdianliang_impl1.jed" last_build_time="1525176732" last_build_size="849474"/>
+        <Report name="LEDdianliang_impl1.lsedata" last_build_time="1525176281" last_build_size="1592"/>
+        <Report name="LEDdianliang_impl1.ncd" last_build_time="1525176721" last_build_size="10818"/>
+        <Report name="LEDdianliang_impl1.ngd" last_build_time="1525176282" last_build_size="9386"/>
+        <Report name="LEDdianliang_impl1.tw1" last_build_time="1525176717" last_build_size="3899"/>
+        <Report name="LEDdianliang_impl1.twr" last_build_time="1525176722" last_build_size="7862"/>
+        <Report name="LEDdianliang_impl1_map.ncd" last_build_time="1525176716" last_build_size="9378"/>
+        <Report name="LEDdianliang_impl1_mapvho.sdf" last_build_time="1525176719" last_build_size="4592"/>
+        <Report name="LEDdianliang_impl1_mapvho.vho" last_build_time="1525176719" last_build_size="41532"/>
+        <Report name="LEDdianliang_impl1_mapvo.sdf" last_build_time="1525176718" last_build_size="4672"/>
+        <Report name="LEDdianliang_impl1_mapvo.vo" last_build_time="1525176718" last_build_size="5664"/>
+        <Report name="LEDdianliang_impl1_vho.sdf" last_build_time="1525176725" last_build_size="4736"/>
+        <Report name="LEDdianliang_impl1_vho.vho" last_build_time="1525176725" last_build_size="41525"/>
+        <Report name="LEDdianliang_impl1_vo.sdf" last_build_time="1525176725" last_build_size="4816"/>
+        <Report name="LEDdianliang_impl1_vo.vo" last_build_time="1525176725" last_build_size="5657"/>
+    </Strategy>
+</BuildStatus>

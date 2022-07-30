@@ -1,0 +1,1 @@
+-o C:/FPGACode/Timer_60s/timmertest/compile -lc C:/FPGACode/Timer_60s/timmertest/library.cfg -fl C:/FPGACode/Timer_60s/timmertest/projlib.cfg -pli "C:/Program Files/Lattice/diamond/3.10_x64/active-hdl/bin/systf.dll" -epr C:/FPGACode/Timer_60s/timmertest/compile/timmertest.epr -dbg -work work C:/FPGACode/Timer_60s/timmertest/Timer_60s_tb.v 

@@ -1,0 +1,56 @@
+[ START MERGED ]
+clk_in_c_enable_30 Debounce_uut/pause_state
+[ END MERGED ]
+[ START CLIPPED ]
+n1341
+VCC_net
+Debounce_uut/cnt_112_add_4_1/S0
+Debounce_uut/cnt_112_add_4_1/CI
+Debounce_uut/cnt_112_add_4_19/CO
+cnt_111_add_4_25/S1
+cnt_111_add_4_25/CO
+cnt_111_add_4_1/S0
+cnt_111_add_4_1/CI
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.0.111.2 -- WARNING: Map write only section -- Wed May 23 16:55:03 2018
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "segment_led_1[7]" SITE "F1" ;
+LOCATE COMP "segment_led_1[6]" SITE "B9" ;
+LOCATE COMP "segment_led_1[8]" SITE "C9" ;
+LOCATE COMP "segment_led_1[5]" SITE "A9" ;
+LOCATE COMP "segment_led_1[4]" SITE "E2" ;
+LOCATE COMP "segment_led_1[3]" SITE "E1" ;
+LOCATE COMP "segment_led_1[2]" SITE "F2" ;
+LOCATE COMP "segment_led_1[1]" SITE "C11" ;
+LOCATE COMP "segment_led_1[0]" SITE "A10" ;
+LOCATE COMP "segment_led_2[8]" SITE "A12" ;
+LOCATE COMP "segment_led_2[7]" SITE "K1" ;
+LOCATE COMP "segment_led_2[6]" SITE "A11" ;
+LOCATE COMP "segment_led_2[5]" SITE "B12" ;
+LOCATE COMP "segment_led_2[4]" SITE "H2" ;
+LOCATE COMP "segment_led_2[3]" SITE "H1" ;
+LOCATE COMP "segment_led_2[2]" SITE "J1" ;
+LOCATE COMP "segment_led_2[1]" SITE "B14" ;
+LOCATE COMP "segment_led_2[0]" SITE "C12" ;
+LOCATE COMP "led[13]" SITE "M3" ;
+LOCATE COMP "led[12]" SITE "N3" ;
+LOCATE COMP "led[11]" SITE "P4" ;
+LOCATE COMP "led[10]" SITE "N2" ;
+LOCATE COMP "led[9]" SITE "P2" ;
+LOCATE COMP "led[8]" SITE "M2" ;
+LOCATE COMP "led[7]" SITE "P9" ;
+LOCATE COMP "led[6]" SITE "N9" ;
+LOCATE COMP "led[5]" SITE "N10" ;
+LOCATE COMP "led[4]" SITE "P11" ;
+LOCATE COMP "led[3]" SITE "M11" ;
+LOCATE COMP "led[2]" SITE "P12" ;
+LOCATE COMP "led[1]" SITE "M12" ;
+LOCATE COMP "led[0]" SITE "N13" ;
+LOCATE COMP "clk_in" SITE "C1" ;
+LOCATE COMP "rst_n_in" SITE "L14" ;
+LOCATE COMP "pause" SITE "M13" ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

@@ -1,0 +1,30 @@
+---------------------------------------------------
+Report for cell Timer_60s
+   Instance path: Timer_60s
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      50.00        100.0
+                                  LUT4	      54.00        100.0
+                                 IOBUF	         35        100.0
+                                PFUREG	         56        100.0
+                                RIPPLE	         23        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                           Segment_led	          1        13.5
+                              Debounce	          1        30.7
+---------------------------------------------------
+Report for cell Segment_led
+   Instance path: Timer_60s/Segment_led_uut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       6.75        13.5
+                                  LUT4	      15.00        27.8
+---------------------------------------------------
+Report for cell Debounce
+   Instance path: Timer_60s/Debounce_uut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      15.33        30.7
+                                  LUT4	      10.00        18.5
+                                PFUREG	         23        41.1
+                                RIPPLE	         10        43.5

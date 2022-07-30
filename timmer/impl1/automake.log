@@ -1,0 +1,1095 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "timmer_impl1.ngd" -o "timmer_impl1_map.ncd" -pr "timmer_impl1.prf" -mp "timmer_impl1.mrp" -lpf "C:/FPGACode/timmer/impl1/timmer_impl1.lpf" -lpf "C:/FPGACode/timmer/timmer.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: timmer_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+    <postMsg mid="1166064" type="Warning" dynamic="2" navigation="0" arg0="input" arg1="n1310"  />
+Removing unused logic...
+
+Optimizing...
+
+    <postMsg mid="51001046" type="Warning" dynamic="1" navigation="0" arg0="p1"  />
+
+
+
+Design Summary:
+   Number of registers:     34 out of  4635 (1%)
+      PFU registers:           34 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        46 out of  2160 (2%)
+      SLICEs as Logic/ROM:     46 out of  2160 (2%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         18 out of  2160 (1%)
+   Number of LUT4s:         92 out of  4320 (2%)
+      Number used as logic LUTs:         56
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       36
+      Number used as shift registers:     0
+   Number of PIO sites used: 21 + 4(JTAG) out of 105 (24%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  3
+     Net hold_c: 1 loads, 1 rising, 0 falling (Driver: PIO hold )
+     Net clk_divided: 5 loads, 5 rising, 0 falling (Driver: clk_divided_36 )
+     Net clk_c: 14 loads, 14 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  2
+     Net clk_divided_enable_7: 2 loads, 2 LSLICEs
+     Net clk_divided_enable_4: 2 loads, 2 LSLICEs
+   Number of LSRs:  3
+     Net clk_divided_enable_7: 3 loads, 3 LSLICEs
+     Net rst_c: 1 loads, 1 LSLICEs
+     Net n670: 13 loads, 13 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net cnt_shi_0: 27 loads
+     Net cnt_shi_1: 26 loads
+     Net cnt_shi_2: 25 loads
+     Net cnt_shi_3: 24 loads
+     Net cnt_ge_0: 14 loads
+     Net cnt_ge_1: 13 loads
+     Net n670: 13 loads
+     Net cnt_ge_2: 12 loads
+     Net cnt_ge_3: 12 loads
+     Net clk_divided_enable_7: 5 loads
+ 
+
+   Number of warnings:  2
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 50 MB
+
+Dumping design to file timmer_impl1_map.ncd.
+
+ncd2vdb "timmer_impl1_map.ncd" ".vdbs/timmer_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+
+trce -f "timmer_impl1.mt" -o "timmer_impl1.tw1" "timmer_impl1_map.ncd" "timmer_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file timmer_impl1_map.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Thu May 10 11:28:26 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o timmer_impl1.tw1 -gui timmer_impl1_map.ncd timmer_impl1.prf 
+Design file:     timmer_impl1_map.ncd
+Preference file: timmer_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 239  Score: 846945
+Cumulative negative slack: 846945
+
+Constraints cover 689 paths, 4 nets, and 281 connections (79.15% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Thu May 10 11:28:26 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o timmer_impl1.tw1 -gui timmer_impl1_map.ncd timmer_impl1.prf 
+Design file:     timmer_impl1_map.ncd
+Preference file: timmer_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 689 paths, 4 nets, and 281 connections (79.15% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 239 (setup), 0 (hold)
+Score: 846945 (setup), 0 (hold)
+Cumulative negative slack: 846945 (846945+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+ldbanno "timmer_impl1_map.ncd" -n Verilog -o "timmer_impl1_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the timmer_impl1_map design file.
+
+
+Loading design for application ldbanno from file timmer_impl1_map.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design timmer_impl1_map.ncd into .ldb format.
+Writing Verilog netlist to file timmer_impl1_mapvo.vo
+Writing SDF timing to file timmer_impl1_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+ldbanno "timmer_impl1_map.ncd" -n VHDL -o "timmer_impl1_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the timmer_impl1_map design file.
+
+
+Loading design for application ldbanno from file timmer_impl1_map.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design timmer_impl1_map.ncd into .ldb format.
+Writing VHDL netlist to file timmer_impl1_mapvho.vho
+Writing SDF timing to file timmer_impl1_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+mpartrce -p "timmer_impl1.p2t" -f "timmer_impl1.p3t" -tf "timmer_impl1.pt" "timmer_impl1_map.ncd" "timmer_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "timmer_impl1_map.ncd"
+Thu May 10 11:28:29 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF timmer_impl1_map.ncd timmer_impl1.dir/5_1.ncd timmer_impl1.prf
+Preference file: timmer_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file timmer_impl1_map.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   21+4(JTAG)/280     9% used
+                  21+4(JTAG)/105     24% bonded
+
+   SLICE             46/2160          2% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 141
+Number of Connections: 355
+
+Pin Constraint Summary:
+   21 out of 21 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 14)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+The following 2 signals are selected to use the secondary clock routing resources:
+    n670 (driver: SLICE_27, clk load #: 0, sr load #: 13, ce load #: 0)
+    clk_divided (driver: SLICE_18, clk load #: 5, sr load #: 0, ce load #: 0)
+
+Signal n47 is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+.................
+Placer score = 78127.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  75013
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 14
+  SECONDARY "n670" from F0 on comp "SLICE_27" on site "R13C21A", clk load = 0, ce load = 0, sr load = 13
+  SECONDARY "clk_divided" from Q0 on comp "SLICE_18" on site "R12C17D", clk load = 5, ce load = 0, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 2 out of 8 (25%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   21 + 4(JTAG) out of 280 (8.9%) PIO sites used.
+   21 + 4(JTAG) out of 105 (23.8%) bonded PIO sites used.
+   Number of PIO comps: 21; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 9 / 26 ( 34%) | 2.5V       | -         |
+| 1        | 3 / 26 ( 11%) | 2.5V       | -         |
+| 2        | 0 / 28 (  0%) | -          | -         |
+| 3        | 1 / 7 ( 14%)  | 2.5V       | -         |
+| 4        | 4 / 8 ( 50%)  | 2.5V       | -         |
+| 5        | 4 / 10 ( 40%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 3 secs 
+
+Dumping design to file timmer_impl1.dir/5_1.ncd.
+
+0 connections routed; 355 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=hold_c loads=1 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 4 secs 
+
+Start NBR router at 11:28:33 05/10/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 11:28:33 05/10/18
+
+Start NBR section for initial routing at 11:28:33 05/10/18
+Level 1, iteration 1
+2(0.00%) conflicts; 263(74.08%) untouched conns; 222275 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5.745ns/-222.275ns; real time: 5 secs 
+Level 2, iteration 1
+14(0.01%) conflicts; 246(69.30%) untouched conns; 213606 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5.476ns/-213.606ns; real time: 5 secs 
+Level 3, iteration 1
+14(0.01%) conflicts; 190(53.52%) untouched conns; 132931 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.741ns/-132.931ns; real time: 5 secs 
+Level 4, iteration 1
+9(0.00%) conflicts; 0(0.00%) untouched conn; 128508 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.610ns/-128.508ns; real time: 5 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 11:28:34 05/10/18
+Level 1, iteration 1
+11(0.00%) conflicts; 2(0.56%) untouched conns; 127138 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.564ns/-127.138ns; real time: 5 secs 
+Level 4, iteration 1
+12(0.00%) conflicts; 0(0.00%) untouched conn; 126774 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.564ns/-126.774ns; real time: 5 secs 
+Level 4, iteration 2
+9(0.00%) conflicts; 0(0.00%) untouched conn; 129185 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.651ns/-129.185ns; real time: 5 secs 
+Level 4, iteration 3
+6(0.00%) conflicts; 0(0.00%) untouched conn; 129720 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.651ns/-129.720ns; real time: 5 secs 
+Level 4, iteration 4
+3(0.00%) conflicts; 0(0.00%) untouched conn; 129720 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.651ns/-129.720ns; real time: 5 secs 
+Level 4, iteration 5
+4(0.00%) conflicts; 0(0.00%) untouched conn; 134803 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-134.803ns; real time: 5 secs 
+Level 4, iteration 6
+4(0.00%) conflicts; 0(0.00%) untouched conn; 134803 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-134.803ns; real time: 5 secs 
+Level 4, iteration 7
+3(0.00%) conflicts; 0(0.00%) untouched conn; 135287 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-135.287ns; real time: 5 secs 
+Level 4, iteration 8
+3(0.00%) conflicts; 0(0.00%) untouched conn; 135287 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-135.287ns; real time: 5 secs 
+Level 4, iteration 9
+3(0.00%) conflicts; 0(0.00%) untouched conn; 135587 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-135.587ns; real time: 5 secs 
+Level 4, iteration 10
+1(0.00%) conflict; 0(0.00%) untouched conn; 135587 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-135.587ns; real time: 5 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 136105 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-136.105ns; real time: 5 secs 
+Level 4, iteration 12
+2(0.00%) conflicts; 0(0.00%) untouched conn; 136105 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-136.105ns; real time: 5 secs 
+Level 4, iteration 13
+0(0.00%) conflict; 0(0.00%) untouched conn; 136843 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-136.843ns; real time: 5 secs 
+
+Start NBR section for performance tuning (iteration 1) at 11:28:34 05/10/18
+Level 4, iteration 1
+2(0.00%) conflicts; 0(0.00%) untouched conn; 136025 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-136.025ns; real time: 5 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 147669 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4.305ns/-147.669ns; real time: 5 secs 
+
+Start NBR section for re-routing at 11:28:34 05/10/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 136843 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.871ns/-136.843ns; real time: 5 secs 
+
+Start NBR section for post-routing at 11:28:34 05/10/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 58 (16.34%)
+  Estimated worst slack<setup> : -3.871ns
+  Timing score<setup> : 506599
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=hold_c loads=1 clock_loads=1"  />
+
+Total CPU time 5 secs 
+Total REAL time: 5 secs 
+Completely routed.
+End of route.  355 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 506599 
+
+Dumping design to file timmer_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -3.871
+PAR_SUMMARY::Timing score<setup/<ns>> = 506.599
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.379
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 5 secs 
+Total REAL time to completion: 5 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "timmer_impl1.pt" -o "timmer_impl1.twr" "timmer_impl1.ncd" "timmer_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Thu May 10 11:28:35 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o timmer_impl1.twr -gui timmer_impl1.ncd timmer_impl1.prf 
+Design file:     timmer_impl1.ncd
+Preference file: timmer_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 246  Score: 506599
+Cumulative negative slack: 506599
+
+Constraints cover 689 paths, 4 nets, and 281 connections (79.15% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Thu May 10 11:28:35 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o timmer_impl1.twr -gui timmer_impl1.ncd timmer_impl1.prf 
+Design file:     timmer_impl1.ncd
+Preference file: timmer_impl1.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 689 paths, 4 nets, and 281 connections (79.15% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 246 (setup), 0 (hold)
+Score: 506599 (setup), 0 (hold)
+Cumulative negative slack: 506599 (506599+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+iotiming  "timmer_impl1.ncd" "timmer_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+ibisgen "timmer_impl1.pad" "C:/Program Files/Lattice/diamond/3.10_x64/cae_library/ibis/machxo2.ibs" 
+IBIS Models Generator: Lattice Diamond (64-bit) 3.10.0.111.2
+
+Thu May 10 11:28:37 2018
+
+Comp: clk
+ Site: C1
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: hold
+ Site: M13
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: rst
+ Site: L14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: seg_led_1[0]
+ Site: C12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[1]
+ Site: B14
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[2]
+ Site: J1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[3]
+ Site: H1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[4]
+ Site: H2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[5]
+ Site: B12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[6]
+ Site: A11
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[7]
+ Site: K1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_1[8]
+ Site: A12
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[0]
+ Site: A10
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[1]
+ Site: C11
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[2]
+ Site: F2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[3]
+ Site: E1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[4]
+ Site: E2
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[5]
+ Site: A9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[6]
+ Site: B9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[7]
+ Site: F1
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: seg_led_2[8]
+ Site: C9
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Created design models.
+
+
+Generating: C:\FPGACode\timmer\impl1\IBIS\timmer_impl1.ibs
+
+
+    <postMsg mid="1191031" type="Info"    dynamic="0" navigation="0"  />
+
+ldbanno "timmer_impl1.ncd" -n Verilog  -o "timmer_impl1_vo.vo"         -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the timmer_impl1 design file.
+
+
+Loading design for application ldbanno from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design timmer_impl1.ncd into .ldb format.
+Loading preferences from timmer_impl1.prf.
+Writing Verilog netlist to file timmer_impl1_vo.vo
+Writing SDF timing to file timmer_impl1_vo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+ldbanno "timmer_impl1.ncd" -n VHDL -o "timmer_impl1_vho.vho"         -w -neg 
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the timmer_impl1 design file.
+
+
+Loading design for application ldbanno from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design timmer_impl1.ncd into .ldb format.
+Loading preferences from timmer_impl1.prf.
+Writing VHDL netlist to file timmer_impl1_vho.vho
+Writing SDF timing to file timmer_impl1_vho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+bitgen -f "timmer_impl1.t2b" -w "timmer_impl1.ncd" "timmer_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from timmer_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "timmer_impl1.bit".
+
+bitgen -f "timmer_impl1.t2b" -w "timmer_impl1.ncd" -jedec "timmer_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file timmer_impl1.ncd.
+Design name: segment_counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from timmer_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "timmer_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

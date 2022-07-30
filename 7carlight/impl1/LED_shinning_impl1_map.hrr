@@ -1,0 +1,10 @@
+---------------------------------------------------
+Report for cell tail_lamp
+   Instance path: tail_lamp
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.00        100.0
+                                  LUT4	      41.00        100.0
+                                 IOBUF	         20        100.0
+                                PFUREG	         44        100.0
+                                RIPPLE	         12        100.0

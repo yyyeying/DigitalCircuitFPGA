@@ -1,0 +1,959 @@
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial   "anjianxiaodou_impl1.ngd" -o "anjianxiaodou_impl1_map.ncd" -pr "anjianxiaodou_impl1.prf" -mp "anjianxiaodou_impl1.mrp" -lpf "C:/FPGACode/anjianxiaodou/impl1/anjianxiaodou_impl1.lpf" -lpf "C:/FPGACode/anjianxiaodou/anjianxiaodou.lpf" -c 0            
+map:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: anjianxiaodou_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:     23 out of  4635 (0%)
+      PFU registers:           23 out of  4320 (1%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        15 out of  2160 (1%)
+      SLICEs as Logic/ROM:     15 out of  2160 (1%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         10 out of  2160 (0%)
+   Number of LUT4s:         29 out of  4320 (1%)
+      Number used as logic LUTs:          9
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       20
+      Number used as shift registers:     0
+   Number of PIO sites used: 4 + 4(JTAG) out of 105 (8%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net clk_c: 13 loads, 13 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  1
+     Net u1/clk_c_enable_1: 1 loads, 1 LSLICEs
+   Number of LSRs:  1
+     Net u1/key_edge_0: 10 loads, 10 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u1/key_edge_0: 10 loads
+     Net key_c_0: 2 loads
+     Net key_sec_0: 2 loads
+     Net led_c: 2 loads
+     Net u1/cnt_0: 2 loads
+     Net u1/cnt_12: 2 loads
+     Net u1/cnt_15: 2 loads
+     Net u1/cnt_17: 2 loads
+     Net u1/cnt_7: 2 loads
+     Net u1/key_rst_0: 2 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 48 MB
+
+Dumping design to file anjianxiaodou_impl1_map.ncd.
+
+ncd2vdb "anjianxiaodou_impl1_map.ncd" ".vdbs/anjianxiaodou_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+
+trce -f "anjianxiaodou_impl1.mt" -o "anjianxiaodou_impl1.tw1" "anjianxiaodou_impl1_map.ncd" "anjianxiaodou_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file anjianxiaodou_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Tue May 01 22:50:35 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o anjianxiaodou_impl1.tw1 -gui anjianxiaodou_impl1_map.ncd anjianxiaodou_impl1.prf 
+Design file:     anjianxiaodou_impl1_map.ncd
+Preference file: anjianxiaodou_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 50  Score: 53220
+Cumulative negative slack: 53220
+
+Constraints cover 214 paths, 1 nets, and 102 connections (97.14% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Tue May 01 22:50:35 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o anjianxiaodou_impl1.tw1 -gui anjianxiaodou_impl1_map.ncd anjianxiaodou_impl1.prf 
+Design file:     anjianxiaodou_impl1_map.ncd
+Preference file: anjianxiaodou_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 214 paths, 1 nets, and 102 connections (97.14% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 50 (setup), 0 (hold)
+Score: 53220 (setup), 0 (hold)
+Cumulative negative slack: 53220 (53220+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+ldbanno "anjianxiaodou_impl1_map.ncd" -n Verilog -o "anjianxiaodou_impl1_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the anjianxiaodou_impl1_map design file.
+
+
+Loading design for application ldbanno from file anjianxiaodou_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design anjianxiaodou_impl1_map.ncd into .ldb format.
+Writing Verilog netlist to file anjianxiaodou_impl1_mapvo.vo
+Writing SDF timing to file anjianxiaodou_impl1_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+ldbanno "anjianxiaodou_impl1_map.ncd" -n VHDL -o "anjianxiaodou_impl1_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the anjianxiaodou_impl1_map design file.
+
+
+Loading design for application ldbanno from file anjianxiaodou_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design anjianxiaodou_impl1_map.ncd into .ldb format.
+Writing VHDL netlist to file anjianxiaodou_impl1_mapvho.vho
+Writing SDF timing to file anjianxiaodou_impl1_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+mpartrce -p "anjianxiaodou_impl1.p2t" -f "anjianxiaodou_impl1.p3t" -tf "anjianxiaodou_impl1.pt" "anjianxiaodou_impl1_map.ncd" "anjianxiaodou_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "anjianxiaodou_impl1_map.ncd"
+Tue May 01 22:50:37 2018
+
+PAR: Place And Route Diamond (64-bit) 3.10.0.111.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF anjianxiaodou_impl1_map.ncd anjianxiaodou_impl1.dir/5_1.ncd anjianxiaodou_impl1.prf
+Preference file: anjianxiaodou_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file anjianxiaodou_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application par from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    4+4(JTAG)/280     3% used
+                   4+4(JTAG)/105     8% bonded
+
+   SLICE             15/2160         <1% used
+
+   GSR                1/1           100% used
+
+
+Number of Signals: 62
+Number of Connections: 105
+    <postMsg mid="61001101" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   4 out of 4 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 13)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    u1/key_edge_0 (driver: u1/SLICE_14, clk load #: 0, sr load #: 10, ce load #: 0)
+
+Signal rst_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+..............
+Placer score = 31670.
+Finished Placer Phase 1.  REAL time: 0 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  31670
+Finished Placer Phase 2.  REAL time: 0 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 13
+  SECONDARY "u1/key_edge_0" from F0 on comp "u1/SLICE_14" on site "R12C17B", clk load = 0, ce load = 0, sr load = 10
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   4 + 4(JTAG) out of 280 (2.9%) PIO sites used.
+   4 + 4(JTAG) out of 105 (7.6%) bonded PIO sites used.
+   Number of PIO comps: 4; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 26 (  0%) | -          | -         |
+| 1        | 3 / 26 ( 11%) | 2.5V       | -         |
+| 2        | 0 / 28 (  0%) | -          | -         |
+| 3        | 0 / 7 (  0%)  | -          | -         |
+| 4        | 0 / 8 (  0%)  | -          | -         |
+| 5        | 1 / 10 ( 10%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 1 secs 
+
+Dumping design to file anjianxiaodou_impl1.dir/5_1.ncd.
+
+0 connections routed; 105 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 2 secs 
+
+Start NBR router at 22:50:39 05/01/18
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 22:50:39 05/01/18
+
+Start NBR section for initial routing at 22:50:39 05/01/18
+Level 1, iteration 1
+1(0.00%) conflict; 49(46.67%) untouched conns; 91272 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.349ns/-91.272ns; real time: 2 secs 
+Level 2, iteration 1
+7(0.00%) conflicts; 42(40.00%) untouched conns; 88579 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.349ns/-88.579ns; real time: 2 secs 
+Level 3, iteration 1
+4(0.00%) conflicts; 4(3.81%) untouched conns; 72812 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-72.812ns; real time: 3 secs 
+Level 4, iteration 1
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73208 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.208ns; real time: 3 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 22:50:40 05/01/18
+Level 1, iteration 1
+3(0.00%) conflicts; 0(0.00%) untouched conn; 72880 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.395ns/-72.880ns; real time: 3 secs 
+Level 4, iteration 1
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73208 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.208ns; real time: 3 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73208 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.208ns; real time: 3 secs 
+Level 4, iteration 3
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73208 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.208ns; real time: 3 secs 
+Level 4, iteration 4
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73208 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.208ns; real time: 3 secs 
+Level 4, iteration 5
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73329 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.329ns; real time: 3 secs 
+Level 4, iteration 6
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73329 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.329ns; real time: 3 secs 
+Level 4, iteration 7
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73329 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.329ns; real time: 3 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73329 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.329ns; real time: 3 secs 
+Level 4, iteration 9
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73329 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.329ns; real time: 3 secs 
+Level 4, iteration 10
+2(0.00%) conflicts; 0(0.00%) untouched conn; 73329 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.329ns; real time: 3 secs 
+Level 4, iteration 11
+1(0.00%) conflict; 0(0.00%) untouched conn; 74209 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.697ns/-74.209ns; real time: 3 secs 
+Level 4, iteration 12
+1(0.00%) conflict; 0(0.00%) untouched conn; 74209 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.697ns/-74.209ns; real time: 3 secs 
+Level 4, iteration 13
+1(0.00%) conflict; 0(0.00%) untouched conn; 73890 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.890ns; real time: 3 secs 
+Level 4, iteration 14
+1(0.00%) conflict; 0(0.00%) untouched conn; 73890 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.890ns; real time: 3 secs 
+Level 4, iteration 15
+0(0.00%) conflict; 0(0.00%) untouched conn; 74698 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.734ns/-74.698ns; real time: 3 secs 
+Level 4, iteration 16
+0(0.00%) conflict; 0(0.00%) untouched conn; 74698 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.734ns/-74.698ns; real time: 3 secs 
+
+Start NBR section for performance tuning (iteration 1) at 22:50:40 05/01/18
+Level 4, iteration 1
+1(0.00%) conflict; 0(0.00%) untouched conn; 73549 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.477ns/-73.549ns; real time: 3 secs 
+Level 4, iteration 2
+0(0.00%) conflict; 0(0.00%) untouched conn; 75001 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.734ns/-75.001ns; real time: 3 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 74698 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.734ns/-74.698ns; real time: 3 secs 
+
+Start NBR section for re-routing at 22:50:40 05/01/18
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 74698 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -3.734ns/-74.698ns; real time: 3 secs 
+
+Start NBR section for post-routing at 22:50:40 05/01/18
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 65 (61.90%)
+  Estimated worst slack<setup> : -3.734ns
+  Timing score<setup> : 66024
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 3 secs 
+Total REAL time: 3 secs 
+Completely routed.
+End of route.  105 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 66024 
+
+Dumping design to file anjianxiaodou_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Success
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -3.734
+PAR_SUMMARY::Timing score<setup/<ns>> = 66.024
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.306
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 3 secs 
+Total REAL time to completion: 3 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "anjianxiaodou_impl1.pt" -o "anjianxiaodou_impl1.twr" "anjianxiaodou_impl1.ncd" "anjianxiaodou_impl1.prf"
+trce:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Tue May 01 22:50:41 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o anjianxiaodou_impl1.twr -gui anjianxiaodou_impl1.ncd anjianxiaodou_impl1.prf 
+Design file:     anjianxiaodou_impl1.ncd
+Preference file: anjianxiaodou_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 88  Score: 66024
+Cumulative negative slack: 66024
+
+Constraints cover 214 paths, 1 nets, and 102 connections (97.14% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Tue May 01 22:50:41 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o anjianxiaodou_impl1.twr -gui anjianxiaodou_impl1.ncd anjianxiaodou_impl1.prf 
+Design file:     anjianxiaodou_impl1.ncd
+Preference file: anjianxiaodou_impl1.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 214 paths, 1 nets, and 102 connections (97.14% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 88 (setup), 0 (hold)
+Score: 66024 (setup), 0 (hold)
+Cumulative negative slack: 66024 (66024+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 0 secs 
+
+iotiming  "anjianxiaodou_impl1.ncd" "anjianxiaodou_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 4
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+Computing Min Clock to Output Delay ...
+Done.
+
+ibisgen "anjianxiaodou_impl1.pad" "C:/Program Files/Lattice/diamond/3.10_x64/cae_library/ibis/machxo2.ibs" 
+IBIS Models Generator: Lattice Diamond (64-bit) 3.10.0.111.2
+
+Tue May 01 22:50:43 2018
+
+Comp: clk
+ Site: C1
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: key
+ Site: L14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Comp: led
+ Site: N13
+ Type: OUT
+ IO_TYPE=LVCMOS25 
+ DRIVE=8mA 
+ PULL=DOWN 
+ SLEW=SLOW 
+-----------------------
+Comp: rst
+ Site: N14
+ Type: IN
+ IO_TYPE=LVCMOS25 
+ PULL=DOWN 
+ CLAMP=ON 
+ HYSTERESIS=SMALL 
+-----------------------
+Created design models.
+
+
+Generating: C:\FPGACode\anjianxiaodou\impl1\IBIS\anjianxiaodou_impl1.ibs
+
+
+    <postMsg mid="1191031" type="Info"    dynamic="0" navigation="0"  />
+
+ldbanno "anjianxiaodou_impl1.ncd" -n Verilog  -o "anjianxiaodou_impl1_vo.vo"         -w -neg
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the anjianxiaodou_impl1 design file.
+
+
+Loading design for application ldbanno from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design anjianxiaodou_impl1.ncd into .ldb format.
+Loading preferences from anjianxiaodou_impl1.prf.
+Writing Verilog netlist to file anjianxiaodou_impl1_vo.vo
+Writing SDF timing to file anjianxiaodou_impl1_vo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+ldbanno "anjianxiaodou_impl1.ncd" -n VHDL -o "anjianxiaodou_impl1_vho.vho"         -w -neg 
+ldbanno: version Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the anjianxiaodou_impl1 design file.
+
+
+Loading design for application ldbanno from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design anjianxiaodou_impl1.ncd into .ldb format.
+Loading preferences from anjianxiaodou_impl1.prf.
+Writing VHDL netlist to file anjianxiaodou_impl1_vho.vho
+Writing SDF timing to file anjianxiaodou_impl1_vho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+
+bitgen -f "anjianxiaodou_impl1.t2b" -w "anjianxiaodou_impl1.ncd" "anjianxiaodou_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from anjianxiaodou_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "anjianxiaodou_impl1.bit".
+
+bitgen -f "anjianxiaodou_impl1.t2b" -w "anjianxiaodou_impl1.ncd" -jedec "anjianxiaodou_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.10.0.111.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file anjianxiaodou_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: C:/Program Files/Lattice/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from anjianxiaodou_impl1.prf.
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.94.
+ 
+Saving bit stream in "anjianxiaodou_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 

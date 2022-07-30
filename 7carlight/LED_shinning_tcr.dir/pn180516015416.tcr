@@ -1,0 +1,6 @@
+#Start recording tcl command: 5/16/2018 01:53:14
+#Project Location: C:/Users/ktami/Desktop/step; Project name: LED_shinning
+prj_project new -name "LED_shinning" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+prj_project save
+prj_project save
+#Stop recording: 5/16/2018 01:54:16

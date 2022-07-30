@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "LEDshining1_LEDshining1.log"
+-o "LEDshining1_LEDshining1.csv"
+-pr "LEDshining1_LEDshining1.prf"
